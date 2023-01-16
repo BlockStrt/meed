@@ -8,13 +8,13 @@ import VideoBackground from '@/component/video'
 export default function Home() {
   return (
     <>
-    {/* <VideoBackground/ */}
+    <VideoBackground/>
     <m.div
      initial={{x: '100%'}}
      animate={{x: '0%'}}
      transition={{duration: 1.75, ease: 'easeInOut'}}
      exit={{opacity: 1}}
-     className="h-screen bg-black fixed  mx-auto max-auto overflow-hidden w-screen text-red-300" >
+     className="h-screen fixed  mx-auto max-auto overflow-hidden w-screen text-red-300" >
 
       <Head>
         <title>Maxine Wint</title>
