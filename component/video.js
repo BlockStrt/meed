@@ -6,7 +6,7 @@ const  VideoBackground = () => {
     return (
         <video
           loop={true}
-          autoPlay="autoplay"
+          autoPlay={autoplay}
           src={'./KME.mp4'}
           muted
           type="video/mp4"
