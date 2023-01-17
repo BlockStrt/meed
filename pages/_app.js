@@ -2,7 +2,9 @@ import Navbar from '@/component/navbar'
 import '@/styles/globals.css'
 import Image from 'next/image'
 import {AnimatePresence} from 'framer-motion'
+import { NextUIProvider } from '@nextui-org/react';
 import Logo from '../public/KMM LOGO.png'
+
 
 export default function App({ Component, pageProps, router }) {
   return (
@@ -17,6 +19,7 @@ export default function App({ Component, pageProps, router }) {
             
             }}  ></Image>
         
+  
   <AnimatePresence>
   <Component key={router.pathname} {...pageProps} />
   </AnimatePresence>

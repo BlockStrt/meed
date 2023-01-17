@@ -13,14 +13,14 @@ export default function Navbar(){
        About
        </li>
       </Link>
-      <Link href={'/buy'}>
+      <Link href={'/store'}>
       <li>
        Store
        </li>
       </Link>
-      <Link href={'/contact'}>
+      <Link href={'/gallery'}>
       <li>
-       Contact
+       Gallery
        </li>
       </Link>
      </footer>
