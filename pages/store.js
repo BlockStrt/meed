@@ -1,5 +1,5 @@
 import {motion as m} from 'framer-motion'
-import Gallery from '../component/gallery'
+import Gallery from '../component/Gallery'
 
 export default function About(){
     return(
