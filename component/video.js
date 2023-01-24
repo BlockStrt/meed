@@ -6,8 +6,8 @@ const  VideoBackground = () => {
     return (
         <video
           loop={true}
-          autoPlay
-          src={'./KME.mp4'}
+          autoPlay={true}
+          src={'https://cdn.sanity.io/files/cpwmjnrl/production/ecf5a88e2b60ad27d26992a2f7413a54a22fe0a5.mp4'}
           muted
           type="video/mp4"
           style={{

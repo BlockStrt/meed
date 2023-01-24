@@ -1,43 +1,62 @@
+import { useState } from 'react'
 import {motion as m} from 'framer-motion'
-import { container, item } from '../animation'
+import Gallery from '@/component/Gallery';
+
 
 export default function About(){
+
+        const [showPopup, setShowPopup] = useState(false);
+        const [popupContent, setPopupContent] = useState('');
+
+        function handleClick(content){
+            setPopupContent(content);
+            setShowPopup(true);
+        }
+
     return(
         <m.main
         initial={{y: '100%'}}
         animate={{y: '0%'}}
         transition={{duration: 0.75, ease: 'easeInOut'}}
         exit={{opacity: 1}}
-         className=' overflow-hidden  text-white-900 absolute top-0 left-0 w-full h-full bg-red-400 lg-px48 px-16'>
-            <div className=' p-1 relative overflow-hidden top-1/3'>
-                <m.h1 
-                animate={{y:0}} 
-                initial={{y: '100%'}}
-                transition={{delay: 0.5, duration: 0.5}}
-                className='text-4xl text-center lg:text-right lg:text-9xl text-white font-BlowBrush'>Social Following
-                </m.h1>
-            </div>
-       
-            <div className='relative top-2/4 xs:top-[34%] flex gap-40 '>
-                <div className='lg:text-2cl text-base font-TrashHand '>
-                    <h4> Social Following</h4>
+         className=' overflow-hidden  text-white-900 absolute top-0 left-0 w-screen h-screen bg-red-400 lg-px48 px-16'>
+           
+            <div className='relative grid grid-rows-3 md:grid-cols-3 gap-3 w-[100%] h-[50%] md:h-[100%] top-32 justify-center display-flex align-items-center m-auto
+             '>
+                {/* first gallery */}
+                <div className='border border-black w-[400px] md:w-[100%] hover:grayscale-100
+                hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 '
+                onClick={() => handleClick()}
+                >
+                    
                 </div>
-                <div className=' lg:text-3xl text-1xl underline'>
-                    <m.ul  variants={container} initial="hidden" animate="show" className=' font-TrashHand'>
-                        <div className='overflow-hidden'>
-                            <m.li variants={item} className="pb-2">IG - <span className='text-white'>7,560</span> followers </m.li>
-                        </div>
-                        <div className='overflow-hidden'>
-                            <m.li variants={item} className="pb-2">Twitter - <span className='text-white'>5,063</span> followers </m.li>
-                        </div>
-                        <div className='overflow-hidden'>
-                            <m.li variants={item} className="pb-2">Youtube - <span className='text-white'>1,140</span> subscribers </m.li>
-                        </div>
-                        
+                {/* second gallery */}
+                <div className='border border-black hover:grayscale-100 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 '
+                onClick={() => handleClick('Second content')}
+                >
+
+                </div>
+                {/* third gallery */}
+                <div className='border border-black hover:grayscale-100 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 '
+                onClick={() => handleClick('Third content')}
+                >
+
+                </div>
+                {showPopup && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                    <div className="bg-white p-6 rounded-lg w-[80%] h-[80%]">
+                        <p className="text-center">{popupContent}</p>
+                        <button className="bg-red-500 text-white py-2 px-4 rounded-full" onClick={() => setShowPopup(false)}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
+
+            </div>
             
-                    </m.ul>
-                </div>
-            </div>
+            
+        
         </m.main>
     )
 }

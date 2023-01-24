@@ -8,9 +8,8 @@ export default function About(){
         animate={{y: '0%'}}
         transition={{duration: 0.75, ease: 'easeInOut'}}
         exit={{opacity: 1}}
-         className=' overflow-hidden  text-white-900 absolute top-0 left-0 w-full h-full bg-[#7ED095] lg-px48 px-16'>
-         
-         <Gallery/>
+         className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16'>
+ 
 
 
 
