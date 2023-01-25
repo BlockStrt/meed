@@ -3,7 +3,8 @@ import '@/styles/globals.css'
 import Image from 'next/image'
 import {AnimatePresence} from 'framer-motion'
 import { NextUIProvider } from '@nextui-org/react';
-import Logo from '../public/KMM LOGO.png'
+
+const Logo = 'https://cdn.sanity.io/images/cpwmjnrl/production/2bf50a3f3bf642467243c91b94216ea84d7a2a5c-2619x1057.png'
 
 
 export default function App({ Component, pageProps, router }) {

@@ -9,10 +9,17 @@ import Image from 'next/image'
  const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/636351a2c94afc022d721a5a7f2bdcf64b1af097-7132x7355.jpg';
  const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/5061c7fc62e1890ecd16294e51be47b4de86bd3c-7033x7339.jpg';
  const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3663e10ba1df2b66323f49b246c3c740dad3c146-7053x7110.jpg';
+ const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/2e540147e14c3583157985c686088b4f73f63e52-7116x9466.jpg'
+ const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/910352fc657f4f501435fdbfd4521d9697826b15-7074x7047.jpg'
+ const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/47b074b4d29d1443710ee3f987f22adbf7ef1d04-7095x7089.jpg'
+ const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/2c81b9690017a65777d2fce6f4b76626dd635d55-7074x7131.jpg'
+ const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/3499f89baf8bf1cdf7b1088e27a2d52b51de47c0-7033x7152.jpg'
+ const img11 = 'https://cdn.sanity.io/images/cpwmjnrl/production/ba8a332cf6ac4f59854b786d1573c9afb2162999-5583x17515.jpg'
+ const img12 = 'https://cdn.sanity.io/images/cpwmjnrl/production/26301f10429e9cbaf01a0f3f5799d1589c6f9867-7132x7355.jpg'
+ const img13 = 'https://cdn.sanity.io/images/cpwmjnrl/production/9b02f7a05b8ece7d8b48c36cf6ebf5d8d9b635d4-7095x7089.jpg'
 
 
-
-const Gallery = () => {
+const Gall = () => {
     
     let data = [
         {
@@ -35,23 +42,53 @@ const Gallery = () => {
             id: 5,
             Image: img5,
         },
+        {
+            id: 6,
+            Image: img6,
+        },
+        {
+            id: 7,
+            Image: img7,
+        },
+        {
+            id: 8,
+            Image: img8,
+        },
+        {
+            id: 9,
+            Image: img9,
+        },
+        {
+            id: 10,
+            Image: img10,
+        },
+        {
+            id: 11,
+            Image: img11,
+        },
+        {
+            id: 12,
+            Image: img12,
+        },
+        {
+            id: 13,
+            Image: img13,
+        },
     ]
 
     return(
         <>
-      <div>
-        {data.map((item)=>{
+      <div className=' transition-all ease-in-out'>
+        {data.map((item, index) => {
             return(
-                <div className=' w-[100%] h-[50%]'>
-                    <Image 
-                    className=''
-                    src={item.Image} 
-                    key={item.id} 
-                    alt={`Image ${item.id}`} 
-                    width={100}
-                    height={100}
-                    cover />
-                </div>
+            <div className='' key={index}>
+            <Image
+            className='w-full h-full cursor-pointer mb-12  '
+             alt='alt'
+             width={500}
+             height={500}
+             src={item.Image}/>
+            </div>
             )
         })}
       </div>
@@ -60,4 +97,4 @@ const Gallery = () => {
     )
 }
 
-export default Gallery
+export default Gall

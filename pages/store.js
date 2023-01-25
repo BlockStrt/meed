@@ -1,7 +1,7 @@
 import {motion as m} from 'framer-motion'
-import Gallery from '../component/Gallery'
 
-export default function About(){
+
+export default function Store(){
     return(
         <m.main
         initial={{y: '100%'}}
