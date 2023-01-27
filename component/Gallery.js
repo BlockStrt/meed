@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
+import styles from '../styles/Home.module.css'
 
 
 
@@ -20,7 +21,6 @@ import Image from 'next/image'
 
 
 const Gall = () => {
-    
     let data = [
         {
             id: 1,
@@ -75,15 +75,42 @@ const Gall = () => {
             Image: img13,
         },
     ]
+    const [model, setModel] = useState(false)
+    const [tempimgSrc, setTempImgSrc] = useState('')
+    const getImg = (Image) => {
+        setTempImgSrc(Image);
+        setModel(true)
+    }
+
+    
 
     return(
         <>
+        <div className='model ' style={{display: model ? 'flex' : 'none',
+        width:'100%', height:'100%', zIndex:'999', position:'fixed', top:'0', 
+        left: '0',  justifyContent:'center', alignItems:'center',
+        backgroundColor:'#000000', overflow:'hidden', transition: 'transform .5s ease-in-out',
+         
+        }} >
+            <Image
+            className='h-screen object-cover'
+            id='img'
+            alt=''
+            width={600}
+            height={600}
+             src={tempimgSrc}/>
+             <span className='absolute flex top-0 right-0'>
+             <button
+             className='text-white z-[1000]'
+              onClick={() => setModel(false)}>Close</button>
+              </span>
+        </div>
       <div className=' transition-all ease-in-out'>
         {data.map((item, index) => {
             return(
-            <div className='' key={index}>
+            <div className='' key={index} onClick={() => getImg(item.Image)}>
             <Image
-            className='w-full h-full cursor-pointer mb-12  '
+            className=' '
              alt='alt'
              width={500}
              height={500}

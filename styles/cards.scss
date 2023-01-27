@@ -1,0 +1,11 @@
+@layer components{
+
+    .model:hover{
+        @apply w-[100%] h-[100%] fixed top-0 left-0 flex justify-center
+        items-center bg-black opacity-0  transform scale-0 overflow-hidden
+        z-[999] transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out
+    }
+    .model.open{
+      @apply hidden opacity-100 transform scale-0
+    }
+    }
