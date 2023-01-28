@@ -18,7 +18,17 @@ import styles from '../styles/Home.module.css'
  const img11 = 'https://cdn.sanity.io/images/cpwmjnrl/production/ba8a332cf6ac4f59854b786d1573c9afb2162999-5583x17515.jpg'
  const img12 = 'https://cdn.sanity.io/images/cpwmjnrl/production/26301f10429e9cbaf01a0f3f5799d1589c6f9867-7132x7355.jpg'
  const img13 = 'https://cdn.sanity.io/images/cpwmjnrl/production/9b02f7a05b8ece7d8b48c36cf6ebf5d8d9b635d4-7095x7089.jpg'
-
+ const img14 = 'https://cdn.sanity.io/images/cpwmjnrl/production/9fcb631dbd09deb79a2dbf7bb9a1f2f13cbcd74b-8747x7259.jpg'
+ const img15 = 'https://cdn.sanity.io/images/cpwmjnrl/production/6612510e2612082828c2af5e33686340e4601dce-7114x9119.jpg'
+ const img16 = 'https://cdn.sanity.io/images/cpwmjnrl/production/fe60299824a298b8d81b99301f6cb5c2c80364bc-7218x9121.jpg'
+ const img17 = 'https://cdn.sanity.io/images/cpwmjnrl/production/b1309a5079ab76f5124bf436edd0b18f90c2fe83-7176x9239.jpg'
+ const img18 = 'https://cdn.sanity.io/images/cpwmjnrl/production/375b3c2d3e22f8699116239d35ba965482c99740-14747x7092.jpg'
+ const img19 = 'https://cdn.sanity.io/images/cpwmjnrl/production/a97b97e3cc529357b3af6842ea3c59ce9041ccac-17576x7116.jpg'
+ const img20 = 'https://cdn.sanity.io/images/cpwmjnrl/production/b8ecca5a291afb1092beff1d7e2e0fe99793ffbe-7064x7186.jpg'
+ const img21 = 'https://cdn.sanity.io/images/cpwmjnrl/production/9a382cab5696ac7f7564d12f509ae9ac6394c29a-23748x7992.jpg'
+ const img22 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4f8bb1d5efc625efc266ed6b33d91ebd8c2f1493-7081x9447.jpg'
+ const img23 = 'https://cdn.sanity.io/images/cpwmjnrl/production/06ea04d714a22b20e39a005dc219b7206a6c095b-22263x7064.jpg'
+ const img24 = 'https://cdn.sanity.io/images/cpwmjnrl/production/99a57286a43cec69f396f55eafc1f4a613df7adf-9064x12000.jpg'
 
 const Gall = () => {
     let data = [
@@ -74,6 +84,50 @@ const Gall = () => {
             id: 13,
             Image: img13,
         },
+        // {
+        //     id: 14,
+        //     Image: img14,
+        // },
+        // {
+        //     id: 15,
+        //     Image: img15,
+        // },
+        // {
+        //     id: 16,
+        //     Image:img16 ,
+        // },
+        // {
+        //     id: 17,
+        //     Image: img17,
+        // },
+        // {
+        //     id: 18,
+        //     Image: img18,
+        // },
+        // {
+        //     id: 19,
+        //     Image: img19,
+        // },
+        // {
+        //     id: 20,
+        //     Image: img20,
+        // },
+        // {
+        //     id: 21,
+        //     Image: img21,
+        // },
+        // {
+        //     id: 22,
+        //     Image: img22,
+        // },
+        // {
+        //     id: 23,
+        //     Image: img23,
+        // },
+        // {
+        //     id: 24,
+        //     Image: img24,
+        // },
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -116,7 +170,7 @@ const Gall = () => {
          
         }} >
             <Image
-            className='w-full h-full object-contain justify-center items-center mx-auto'
+            className='w-[100%] h-[100%] object-contain justify-center items-center mx-auto'
             id='img'
             alt=''
             width={900}
@@ -128,15 +182,15 @@ const Gall = () => {
                     <button className='text-white z-[1000]' onClick={nextImage}>Next</button>
                 </span>
         </div>
-      <div  className='h-screen w-screen overflow-auto transition-all ease-in-out '>
+      <div  className=' transition-all ease-in-out relative  columns-3 '>
         {data.map((item, index) => {
             return(
             <div className='' key={index} onClick={() => getImg(item.Image)}>
             <Image
             className=''
              alt='alt'
-             width={500}
-             height={500}
+             width={900}
+             height={900}
              src={item.Image}/>
             </div>
             )

@@ -93,15 +93,15 @@ const GallTwo = () => {
               onClick={() => setModel(false)}>Close</button>
               </span>
         </div>
-      <div className=' transition-all ease-in-out'>
+      <div className='transition-all ease-in-out relative  columns-3 '>
         {data.map((item, index) => {
             return(
             <div className='' key={index} onClick={() => getImg(item.Image)}>
             <Image
             className='w-full h-full cursor-pointer mb-12  '
              alt='alt'
-             width={500}
-             height={500}
+             width={600}
+             height={600}
              src={item.Image}/>
             </div>
             )
