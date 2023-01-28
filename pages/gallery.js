@@ -17,7 +17,8 @@ export default function Gallery(){
         exit={{opacity: 1}}
          className=' overflow-hidden text-white-900 absolute top-0 left-0 w-screen h-screen bg-red-400 lg-px48 px-16
          '>
-          <div className='md:columns-3 gap-3 mb-12 mt-12 p-10 text-center '>
+          <div className='relative flex md:columns-3 gap-3 mb-12 mt-12 p-10 text-center mx-auto justify-center
+          items-center  '>
             <h1>Keali Gallery</h1>
             <Gall className='overflow-auto'/>
           </div>

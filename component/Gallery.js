@@ -112,14 +112,15 @@ const Gall = () => {
         width:'100vw', height:'100vh', zIndex:'999', position:'fixed', top:'0', 
         left: '0',  justifyContent:'center', alignItems:'center',
         backgroundColor:'#000000',  transition: 'transform .5s ease-in-out',
+        marginX:'auto',
          
         }} >
             <Image
-            className=' object-cover'
+            className='w-full h-full object-contain justify-center items-center mx-auto'
             id='img'
             alt=''
-            width={600}
-            height={600}
+            width={900}
+            height={900}
              src={tempimgSrc}/>
                 <span className='absolute flex top-0 right-0 '>
                     <button className='text-white z-[1000]' onClick={prevImage}>Previous</button>
