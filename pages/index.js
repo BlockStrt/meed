@@ -28,7 +28,7 @@ export default function Home() {
        
       </nav>
 
-      <main className='mx auto h-full relative top-2/4 w-full flex justify-center  '>
+      <main className='mx auto h-screen relative top-2/4 w-full flex justify-center  '>
             <div className='w-2/4 relative text-center'>
            
             </div>

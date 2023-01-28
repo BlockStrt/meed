@@ -15,16 +15,16 @@ export default function Gallery(){
         animate={{y: '0%'}}
         transition={{duration: 0.75, ease: 'easeInOut'}}
         exit={{opacity: 1}}
-         className=' overflow-x-hidden text-white-900 absolute top-0 left-0 w-screen h-screen bg-red-400 lg-px48 px-16
+         className=' overflow-hidden text-white-900 absolute top-0 left-0 w-screen h-screen bg-red-400 lg-px48 px-16
          '>
           <div className='md:columns-3 gap-3 mb-12 mt-12 p-10 text-center '>
             <h1>Keali Gallery</h1>
-            <Gall/>
+            <Gall className='overflow-auto'/>
           </div>
-          <div className='md:columns-3 gap-3 mb-12 mt-12 p-10 text-center '>
+          {/* <div className='md:columns-3 gap-3 mb-12 mt-12 p-10 text-center '>
             <h1>Keali Gallery</h1>
             <GallTwo/>
-          </div>
+          </div> */}
         
         </m.main>
     )
