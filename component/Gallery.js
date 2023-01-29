@@ -84,50 +84,50 @@ const Gall = () => {
             id: 13,
             Image: img13,
         },
-        // {
-        //     id: 14,
-        //     Image: img14,
-        // },
-        // {
-        //     id: 15,
-        //     Image: img15,
-        // },
-        // {
-        //     id: 16,
-        //     Image:img16 ,
-        // },
-        // {
-        //     id: 17,
-        //     Image: img17,
-        // },
-        // {
-        //     id: 18,
-        //     Image: img18,
-        // },
-        // {
-        //     id: 19,
-        //     Image: img19,
-        // },
-        // {
-        //     id: 20,
-        //     Image: img20,
-        // },
-        // {
-        //     id: 21,
-        //     Image: img21,
-        // },
-        // {
-        //     id: 22,
-        //     Image: img22,
-        // },
-        // {
-        //     id: 23,
-        //     Image: img23,
-        // },
-        // {
-        //     id: 24,
-        //     Image: img24,
-        // },
+        {
+            id: 14,
+            Image: img14,
+        },
+        {
+            id: 15,
+            Image: img15,
+        },
+        {
+            id: 16,
+            Image:img16 ,
+        },
+        {
+            id: 17,
+            Image: img17,
+        },
+        {
+            id: 18,
+            Image: img18,
+        },
+        {
+            id: 19,
+            Image: img19,
+        },
+        {
+            id: 20,
+            Image: img20,
+        },
+        {
+            id: 21,
+            Image: img21,
+        },
+        {
+            id: 22,
+            Image: img22,
+        },
+        {
+            id: 23,
+            Image: img23,
+        },
+        {
+            id: 24,
+            Image: img24,
+        },
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -154,19 +154,14 @@ const Gall = () => {
         }
         setTempImgSrc(data[currentIndex].Image);
     }
-    // const active = true;
-    // if (model === active){
-       
-    // }
     
 
     return(
         <>
-        <div className='model ' style={{display: model ? 'flex' : 'none',
-        width:'100vw', height:'100vh', zIndex:'999', position:'fixed', top:'0', 
-        left: '0',  justifyContent:'center', alignItems:'center',
-        backgroundColor:'#000000',  transition: 'transform .5s ease-in-out',
-        marginX:'auto',
+        <div className='model' style={{display: model ? 'flex' : 'none',
+        width:'100vw', height:'100vh', zIndex:'999', position:'fixed', top:'50%', transform:'translate(-50%, -50%)',
+        left: '50%',  justifyContent:'center', alignItems:'center',
+        backgroundColor:'#000000', marginX:'auto', transition: 'transform .5s ease-in-out', 
          
         }} >
             <Image
@@ -182,7 +177,8 @@ const Gall = () => {
                     <button className='text-white z-[1000]' onClick={nextImage}>Next</button>
                 </span>
         </div>
-      <div  className=' transition-all ease-in-out relative  columns-3 '>
+
+      <div  className=' transition-all ease-in-out relative  columns-3  '>
         {data.map((item, index) => {
             return(
             <div className='' key={index} onClick={() => getImg(item.Image)}>

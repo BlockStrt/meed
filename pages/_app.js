@@ -9,7 +9,7 @@ const Logo = 'https://cdn.sanity.io/images/cpwmjnrl/production/2bf50a3f3bf642467
 
 export default function App({ Component, pageProps, router }) {
   return (
-    <div >
+    <div className=''>
        
           <Image width={200} height={200} src={Logo} style={{
             position: 'fixed',
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps, router }) {
         
   
   <AnimatePresence>
-  <Component  key={router.pathname} {...pageProps} />
+  <Component  key={router.pathname} {...pageProps} className='' />
   </AnimatePresence>
   <Navbar className=" font-FallCome text-white mx-auto md:mx-0 lg:mx-4 justify-center fixed w-full flex bottom-12 md:bottom-0 lg:bottom-0 md:flex lg:flex gap-20 text-2xl md:text-3xl lg:text-5xl list-none "/>
 
