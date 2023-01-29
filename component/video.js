@@ -1,12 +1,14 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useState , useRef} from 'react'
 
 
 const  VideoBackground = () => {
+  const [videoState, setVideoState] = useState("loading");
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.addEventListener('onLoad', () => {
+      videoRef.current.addEventListener('canPlay', () => {
+        setVideoState("ready");
         videoRef.current.play();
       });
     }
@@ -28,7 +30,10 @@ const  VideoBackground = () => {
             objectFit: 'cover',
         }}
            
-            />
+            >  {videoState === "loading" ? (
+              <p>Loading video...</p>
+            ) : null}
+            </video>
                 
       )
     }
