@@ -29,6 +29,17 @@ import styles from '../styles/Home.module.css'
  const img22 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4f8bb1d5efc625efc266ed6b33d91ebd8c2f1493-7081x9447.jpg'
  const img23 = 'https://cdn.sanity.io/images/cpwmjnrl/production/06ea04d714a22b20e39a005dc219b7206a6c095b-22263x7064.jpg'
  const img24 = 'https://cdn.sanity.io/images/cpwmjnrl/production/99a57286a43cec69f396f55eafc1f4a613df7adf-9064x12000.jpg'
+ const img25 = 'https://cdn.sanity.io/images/cpwmjnrl/production/073e5b1f41641bf9208c17c2a56212a1d38e26fd-7035x7062.jpg'
+ const img26 = 'https://cdn.sanity.io/images/cpwmjnrl/production/dfad3f06940fc8728335a77f78bf96bcd4159e8b-7618x7080.jpg'
+ const img27 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f10ea86de9de03961138881e7acaab5a83b9ba0a-7254x7098.jpg'
+ const img28 = 'https://cdn.sanity.io/images/cpwmjnrl/production/536a76a5acb869f69bdd03bb5b076d4fd460c69b-6980x7153.jpg'
+ const img29 = 'https://cdn.sanity.io/images/cpwmjnrl/production/e45d3cc4d0ffc8083913931a8b4f25e999936da1-7126x7062.jpg'
+ const img30 = 'https://cdn.sanity.io/images/cpwmjnrl/production/a43ea5b9ee33f214898ecaaa8eeeb115ab4b5482-6470x7044.jpg'
+ const img31 = 'https://cdn.sanity.io/images/cpwmjnrl/production/37191c4cf6df00fce8ade0ddbf7c50a843010ec7-7290x7062.jpg'
+ const img32 = 'https://cdn.sanity.io/images/cpwmjnrl/production/bfff6da88ee704cf5080e4e8db713d16e2cd85bc-7327x7062.jpg'
+ const img33 = 'https://cdn.sanity.io/images/cpwmjnrl/production/56126884091a9ec2dbf62b70588e4d570519706c-6962x7080.jpg'
+ const img34 = 'https://cdn.sanity.io/images/cpwmjnrl/production/8c940aafff404b2fc4f2e5142d8e0f80411bd710-7144x7062.jpg'
+
 
 const Gall = () => {
     let data = [
@@ -128,6 +139,46 @@ const Gall = () => {
             id: 24,
             Image: img24,
         },
+        {
+            id: 25,
+            Image: img25,
+        },
+        {
+            id: 26,
+            Image: img26,
+        },
+        {
+            id: 27,
+            Image: img27,
+        },
+        {
+            id: 28,
+            Image: img28,
+        },
+        {
+            id: 29,
+            Image: img29,
+        },
+        {
+            id: 30,
+            Image: img30,
+        },
+        {
+            id: 31,
+            Image: img31,
+        },
+        {
+            id: 32,
+            Image: img32,
+        },
+        {
+            id: 33,
+            Image: img33,
+        },
+        {
+            id: 34,
+            Image: img34,
+        },
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -165,15 +216,15 @@ const Gall = () => {
          
         }} >
             <Image
-            className='w-[100%] h-[100%] object-contain justify-center items-center mx-auto'
+            className='w-[100px] h-[100px] object-cover justify-center items-center mx-auto'
             id='img'
             alt=''
             width={900}
             height={900}
              src={tempimgSrc}/>
-                <span className='absolute flex top-0 right-0 '>
-                    <button className='text-white z-[1000]' onClick={prevImage}>Previous</button>
-                    <button className='text-white z-[1000]' onClick={() => setModel(false)}>Close</button>
+                <span className='fixed w-full flex justify-between gap-4 '>
+                    <button className='text-white  z-[1000]' onClick={prevImage}>Previous</button>
+                    <button className='text-black z-[1000]' onClick={() => setModel(false)}>Close</button>
                     <button className='text-white z-[1000]' onClick={nextImage}>Next</button>
                 </span>
         </div>

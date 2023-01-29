@@ -52,7 +52,7 @@ export default function Store(){
         exit={{opacity: 1}}
          className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 overflow-hidden'>
             {/* parent */}
-<div className='grid md:flex  w-[100%] h-[100%]'>
+<div className='grid md:flex w-[100%] h-[100%] '>
     
           {/* image container */}
           
@@ -77,8 +77,8 @@ export default function Store(){
             {/* checkout container */}
         <div className=' w-[50%] h-[80%] grid items-center justify-center '>
             {/* Title pricing container */}
-            <div className=''>
-             <ul>
+            <div className=' '>
+             <ul className=''>
                 <li>
                 <h1 className='text-2xl'>{currentProduct.title}</h1>
                 </li>
@@ -98,7 +98,7 @@ export default function Store(){
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                <label className='p-2'>Quantity</label>
+                <label className='p-2 '>Quantity</label>
                     <Controller
                         name="Qty"
                         control={control}
