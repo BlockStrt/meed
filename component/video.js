@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 
 
 const  VideoBackground = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.addEventListener('onLoad', () => {
+        videoRef.current.play();
+      });
+    }
+  }, [videoRef]);
 
     return (
         <video
+          ref={videoRef}
           loop
           autoPlay
           src={'https://cdn.sanity.io/files/cpwmjnrl/production/ecf5a88e2b60ad27d26992a2f7413a54a22fe0a5.mp4'}
