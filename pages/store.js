@@ -8,9 +8,21 @@ import { Checkbox } from '@mui/material';
 
 
 const slides = [
-    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/0a42dc30669eeb70ba6785605690b218c2acf923-1024x1024.jpg', description: 'Slide 1 Description' },
-    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/6ede803103f3d9791389a347f9b430ae44ba1e61-1024x1024.jpg', description: 'Slide 2 Description' },
-    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/0a42dc30669eeb70ba6785605690b218c2acf923-1024x1024.jpg', description: 'Slide 3 Description' },
+    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/0a42dc30669eeb70ba6785605690b218c2acf923-1024x1024.jpg',
+     title: 'Product 1' ,
+     price: '$125',
+     description: 'First Product description here '
+    },
+    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/6ede803103f3d9791389a347f9b430ae44ba1e61-1024x1024.jpg',
+     title: 'Product 2' ,
+     price: '$225',
+     description: 'Second Product description here '
+    },
+    { image: 'https://cdn.sanity.io/images/7fnjll7q/production/0a42dc30669eeb70ba6785605690b218c2acf923-1024x1024.jpg', 
+    title: 'Product 3' ,
+     price: '$325',
+     description: 'Third Product description here '
+    },
     // ...
   ];
 
@@ -19,16 +31,19 @@ const slides = [
   }
 export default function Store(){
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentProduct, setCurrentProduct] = useState(slides[0]);
     const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
 
     const handlePreviousClick = () => {
         setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+        setCurrentProduct(slides[currentSlide]);
     }
     const handleNextClick = () => {
         setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-      }
+        setCurrentProduct(slides[currentSlide]);
+    }
     return(
         <m.main
         initial={{y: '100%'}}
@@ -40,43 +55,50 @@ export default function Store(){
 <div className='grid md:flex  w-[100%] h-[100%]'>
     
           {/* image container */}
-    <div className="  w-[50%] h-[100%]">
+          
+    <div className=" w-[100%] md:w-[50%] h-[100%]">
             {slides.map((slide, index) => (
                 <div key={index} className={`relative flex inset-0 z-10 ${index === currentSlide ? 'block' : 'hidden'}`}>
-                    
+               
                 <img src={slide.image} alt="" className="object-cover p-10" />
-                <div className="absolute bottom-0 p-4">
-                    {slide.description}
+                
+                <div className="absolute p-10 ">
+                <button className='text-3xl ' onClick={handlePreviousClick}>previous</button>
+                <button className='text-3xl ' onClick={handleNextClick}>next</button>
+                    
                 </div>
                 
           </div>
+          
       ))}
+      
     
     </div>
             {/* checkout container */}
         <div className=' w-[50%] h-[80%] grid items-center justify-center '>
             {/* Title pricing container */}
-            <div class='inner'>
+            <div className=''>
              <ul>
                 <li>
-                <h1>This is the container for checkout</h1>
+                <h1 className='text-2xl'>{currentProduct.title}</h1>
                 </li>
-                <li class='price'>
+                <li className='m-1'>
                     <p>
-                        <strong>$125</strong>
+                        <strong>{currentProduct.price}</strong>
                     </p>
                 </li>
              </ul>
              {/* shippig info  */}
                 <div>
-                    <h2>Details</h2>
+                    <h2 className='m-1'>Details</h2>
+                    <div className='w-full border border-black '></div>
                 </div>
                 <div>
-                    <p>please alow 1-2 days for item to ship after payments</p>
+                    <p className='mt-4 uppercase mb-4'>please alow 1-2 days for item to ship after payments</p>
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                <label>Quantity</label>
+                <label className='p-2'>Quantity</label>
                     <Controller
                         name="Qty"
                         control={control}
@@ -92,7 +114,7 @@ export default function Store(){
                         />
                         )}
                     />
-                <label>Coming soon</label>
+                <label className='p-2'>Coming soon</label>
                     <Controller
                         name="Coming"
                         control={control}

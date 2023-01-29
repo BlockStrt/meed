@@ -17,7 +17,7 @@ export default ({ data, reset, setValue }) => {
           )}
         </pre>
       )}
-
+      <div className="mt-4 justify-between flex">
       <button
         className="button buttonBlack"
         type="button"
@@ -38,7 +38,8 @@ export default ({ data, reset, setValue }) => {
       >
         Reset
       </button>
-      <button className="button">Purchase</button>
+      <button className="">Purchase</button>
+      </div>
     </>
   );
 };
