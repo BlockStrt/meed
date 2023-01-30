@@ -3,7 +3,9 @@ import {motion as m} from 'framer-motion'
 import { useForm, Controller } from 'react-hook-form';
 import  ReactSelect from 'react-select';
 import ButtonResult from '@/component/ButtonResult';
-import { Checkbox } from '@mui/material';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 
 
@@ -56,15 +58,15 @@ export default function Store(){
     
           {/* image container */}
           
-    <div className=" w-[100%] md:w-[50%] h-[100%]">
+    <div className=" w-[120%] md:w-[50%] h-[100%] mx-auto justify-center">
             {slides.map((slide, index) => (
                 <div key={index} className={`relative flex inset-0 z-10 ${index === currentSlide ? 'block' : 'hidden'}`}>
                
                 <img src={slide.image} alt="" className="object-cover p-10" />
                 
-                <div className="absolute p-10 ">
-                <button className='text-3xl ' onClick={handlePreviousClick}>previous</button>
-                <button className='text-3xl ' onClick={handleNextClick}>next</button>
+                <div className="fixed p-16 w-full justify-center items-center ">
+                <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
+                <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
                     
                 </div>
                 
@@ -75,7 +77,7 @@ export default function Store(){
     
     </div>
             {/* checkout container */}
-        <div className=' w-[50%] h-[80%] grid items-center justify-center '>
+        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto '>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
@@ -91,7 +93,7 @@ export default function Store(){
              {/* shippig info  */}
                 <div>
                     <h2 className='m-1'>Details</h2>
-                    <div className='w-full border border-black '></div>
+                    <div className='w-full border border-black opacity-10'></div>
                 </div>
                 <div>
                     <p className='mt-4 uppercase mb-4'>please alow 1-2 days for item to ship after payments</p>
@@ -99,6 +101,7 @@ export default function Store(){
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <label className='p-2 '>Quantity</label>
+                <div className='w-full border border-black mb-2 mt-1 opacity-10'></div>
                     <Controller
                         name="Qty"
                         control={control}
@@ -115,6 +118,7 @@ export default function Store(){
                         )}
                     />
                 <label className='p-2'>Coming soon</label>
+                <div className='w-full border border-black mb-2 mt-1 opacity-10'></div>
                     <Controller
                         name="Coming"
                         control={control}

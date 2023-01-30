@@ -1,6 +1,7 @@
 import React from "react";
 import { convertToRaw, EditorState } from "draft-js";
 
+
 export default ({ data, reset, setValue }) => {
   return (
     <>
@@ -17,9 +18,10 @@ export default ({ data, reset, setValue }) => {
           )}
         </pre>
       )}
-      <div className="mt-4 justify-between flex">
+      <div className="mt-4 justify-between flex group">
       <button
-        className="button buttonBlack"
+        className=" border border-black p-2  opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out
+        group-hover:bg-white "
         type="button"
         onClick={() => {
           reset({
@@ -38,7 +40,8 @@ export default ({ data, reset, setValue }) => {
       >
         Reset
       </button>
-      <button className="">Purchase</button>
+      <button className="border border-black p-2 opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out
+        group-hover:bg-white">Purchase</button>
       </div>
     </>
   );
