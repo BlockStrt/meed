@@ -54,20 +54,19 @@ export default function Store(){
         exit={{opacity: 1}}
          className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 overflow-hidden'>
             {/* parent */}
-<div className='grid md:flex w-[100%] h-[100%] '>
+<div className='grid md:flex w-[100%] h-[100%]  '>
     
           {/* image container */}
           
-    <div className=" w-[120%] md:w-[50%] h-[100%] mx-auto justify-center">
+    <div className=" w-[100%] md:w-[50%] h-[100%]">
             {slides.map((slide, index) => (
                 <div key={index} className={`relative flex inset-0 z-10 ${index === currentSlide ? 'block' : 'hidden'}`}>
                
-                <img src={slide.image} alt="" className="object-cover p-10" />
+                <img src={slide.image} alt="" className="object-cover p-10 " />
                 
-                <div className="fixed p-16 w-full justify-center items-center ">
+                <div className="fixed top-40 left-10  w-full justify-center items-center ">
                 <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
                 <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
-                    
                 </div>
                 
           </div>
@@ -77,7 +76,7 @@ export default function Store(){
     
     </div>
             {/* checkout container */}
-        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto '>
+        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto mb-28'>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
