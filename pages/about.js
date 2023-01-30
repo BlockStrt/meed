@@ -10,11 +10,11 @@ export default function About(){
     return(
         <>
         <VideoBackground/>
-        <m.main
-        initial={{y: '100%'}}
-        animate={{y: '0%'}}
-        transition={{duration: 0.75, ease: 'easeInOut'}}
-        exit={{opacity: 1}}
+        <main
+        // initial={{y: '100%'}}
+        // animate={{y: '0%'}}
+        // transition={{duration: 0.75, ease: 'easeInOut'}}
+        // exit={{opacity: 1}}
          className=' overflow-hidden  text-white-900 absolute top-0 left-0 w-full h-full bg-[#D0957E] lg-px48 px-16'>
             <div className=' p-1 relative overflow-hidden top-28 md:top-1/3 lg:top-1/3'>
                 <m.h1 
@@ -53,7 +53,7 @@ export default function About(){
             </div>
        
          
-        </m.main>
+        </main>
         </>
     )
 }

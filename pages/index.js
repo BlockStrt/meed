@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <>
     <VideoBackground/>
-    <m.div
-     initial={{x: '100%'}}
-     animate={{x: '0%'}}
-     transition={{duration: 1.75, ease: 'easeInOut'}}
-     exit={{opacity: 1}}
+    <div
+    //  initial={{x: '100%'}}
+    //  animate={{x: '0%'}}
+    //  transition={{duration: 1.75, ease: 'easeInOut'}}
+    //  exit={{opacity: 1}}
      className="h-screen fixed  mx-auto max-auto overflow-hidden w-screen text-red-300 " >
 
       <Head>
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
       
       </main>
-    </m.div>
+    </div>
     </>
   )
 }
