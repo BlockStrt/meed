@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Navbar(){
     return(
-      <footer className="  font-Balenci text-white mx-auto md:mx-0 lg:mx-4 justify-center fixed w-full flex bottom-12 md:bottom-0 lg:bottom-0 md:flex lg:flex justify-between text-2xl md:text-3xl lg:text-5xl list-none ">
+      <footer className="  font-Balenci text-white mx-auto md:mx-0 lg:mx-4 p-10  fixed w-full flex bottom-12 md:bottom-0 lg:bottom-0 md:flex lg:flex justify-between text-2xl md:text-3xl lg:text-5xl list-none ">
       
       <Link href={'/'}>
       <li>

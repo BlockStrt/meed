@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
+
 import {motion as m} from 'framer-motion'
-import TwitterIcon from '@mui/icons-material/Twitter';
+import Link from 'next/link';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
@@ -24,10 +25,16 @@ export default function About(){
          className='text-white-900 w-screen h-screen bg-[#D0957E] lg-px48 px-16'>
             <div className=' p-1 relative  top-28 md:top-1/3 lg:top-1/3 h-screen'>
                 <div className='flex justify-center cursor-pointer gap-2'>
-                <TwitterIcon/>
+
+                <Link href='https://t.co/lzXOdx22qJ'>
                 <InstagramIcon/>
+                </Link>
+                <Link href='https://t.co/RfzzBiDSek'>
                 <LinkedInIcon/>
+                </Link>
+                <Link href=''>
                 <DocumentScannerIcon/>
+                </Link>
                 </div>
                 <m.h1 
                 animate={{y:0}} 
@@ -42,45 +49,62 @@ export default function About(){
                         Other than art, I am passionate about social justice, specifically the empowerment of Black lives and I think that really translates through my work.  Having witnessed numerous social injustices me and six other teenage girls started an organization called Youth for Black Lives, which through social action was recognized internationally for our courage and effectiveness in being advocates for young voices. I was a Chicago Foundation for Women 2017 Impact Award recipient receiving the prestigious Pioneer Award for her activism. I have also been featured in publications such as Teen Vogue, the Chicago Sun Times, and DNA Info. 
 
                 </m.h1>
-
+                <h1 className='text-center pt-10 font-Balenci text-4xl'>Articles</h1>
+                <div className='border w-full opacity-10 mt-2 border-slate-600'></div>
             </div>
+            
             <section className='h-screen w-screen left-0 absolute bg-[#D0957E] lg-px48 px-16 flex
-              space-x-5 overflow-x-scroll '>
+              space-x-5 overflow-x-scroll overscroll-x-none font-MontItalic font-extrabold'>
+
+                    <Link href='http://voyageatl.com/interview/rising-stars-meet-maxine-wint-of-chicago-traveling-back-and-forth-to-atl/'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden
                     '> 
                     <img
                     className='object-cover h-full rounded-full ' src={content1}/>
-                        Content here
+                        Voyage ATL
                     </article> 
+                    </Link>
+                    <Link href='https://shoutoutatlanta.com/meet-maxine-wint-fashion-designer-and-photographer/'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img className='object-cover h-full rounded-full ' src={content2}/>
-                        Content here
+                        Shout Out Atlanta
                     </article> 
+                    </Link>
+                    <Link href='https://msmagazine.com/2018/04/04/young-feminists-leading-fight-black-lives-chicago/'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img
                     className='object-cover h-full rounded-full ' src={content3}/>
-                        Content here
+                        MS Magazine
                     </article> 
+                    </Link>
+                    <Link href='https://www.teenvogue.com/story/teen-activists-shut-down-chicago-streets-peaceful-blm-protest'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img
                     className='object-contain h-full rounded-full ' src={content4}/>
-                        Content here
+                        Teen Voyage
                     </article> 
+                    </Link>
+                    <Link href='https://sites.saic.edu/fashion2022/artists/maxine-wint/'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img
                     className='object-cover h-full rounded-full ' src={content5}/>
-                        Content here
+                        SAIC
                     </article> 
+                    </Link>
+                    <Link href='https://www.chicagomag.com/city-life/july-2016/black-lives-matter-chi-youth-sit-in-rally/'>
                     <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img
                     className='object-cover h-full rounded-full ' src={content6}/>
-                        Content here
+                        Chicago Mag
                     </article> 
-                    <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+                    </Link>
+                    <Link href='https://www.teenvogue.com/gallery/kids-teens-youths-ambassadors-womens-march'>
+                    <article className=' border border-slate-600 h-[50%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
                     <img
                     className='object-cover h-full rounded-full ' src={content7}/>
-                        Content here
+                        Teen Vogue
                     </article> 
+                    </Link>
                
                    
                 </section>
