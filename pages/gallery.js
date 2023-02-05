@@ -4,9 +4,6 @@ import Gall from '@/component/Gallery'
 import GallTwo from '@/component/GalleryTwo'
 
 
-
-
-
 export default function Gallery(){
 
 
@@ -21,21 +18,10 @@ export default function Gallery(){
             <Gall className=''/>
           </div>
           <div className='md:columns-3 text-4xl justify-center items-center'>
-          <h1 >Design</h1>
+          <h1 >Designn</h1>
             <GallTwo />
           </div>
-          
-
-          {/* <section className='h-screen '>
-          <div className='relative md:columns-3 left-0 gap-3 mb-12  text-center mx-auto justify-center
-          items-center  '>
-            <Gall className=''/>
-          </div>
-          <h1>
-            This Gallery
-          </h1>
-          </section> */}
-         
+        
         </main>
     )
 }
