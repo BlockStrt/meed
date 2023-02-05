@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {motion as m} from 'framer-motion'
 import Gall from '@/component/Gallery'
-import GallTwo from '@/component/GalleryTwo'
+import Galltwo from '@/component/GalleryTwo'
 
 
 export default function Gallery(){
@@ -19,7 +19,7 @@ export default function Gallery(){
           </div>
           <div className='md:columns-3 text-4xl justify-center items-center'>
           <h1 >Designn</h1>
-            <GallTwo />
+            <Galltwo />
           </div>
         
         </main>

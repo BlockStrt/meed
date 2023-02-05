@@ -3,7 +3,7 @@ import Image from 'next/image'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import styles from '../styles/Home.module.css'
+
 
 
 
@@ -15,7 +15,7 @@ import styles from '../styles/Home.module.css'
  const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4bef8db8bcc0e504998833c604ccc8a4417e1a79-3024x4032.jpg';
  const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
 
-const GallTwo = () => {
+const Galltwo = () => {
     let data = [
         {
             id: 1,
@@ -108,4 +108,4 @@ const GallTwo = () => {
     )
 }
 
-export default GallTwo
+export default Galltwo
