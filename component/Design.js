@@ -15,7 +15,7 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
  const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4bef8db8bcc0e504998833c604ccc8a4417e1a79-3024x4032.jpg';
  const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
 
-const Galltwo = () => {
+const Design = () => {
     let data = [
         {
             id: 1,
@@ -108,4 +108,4 @@ const Galltwo = () => {
     )
 }
 
-export default Galltwo
+export default Design
