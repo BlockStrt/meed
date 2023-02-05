@@ -17,7 +17,7 @@ export default function App({ Component, pageProps, router }) {
             position: 'fixed',
             right: '2%',
             top: '2%',
-            zIndex: '1000',
+            zIndex: '999',
             maxHeight: 'auto',
             
             }}  ></Image>

@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import CloseIcon from '@mui/icons-material/Close';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import styles from '../styles/Home.module.css'
 
 
@@ -196,7 +199,6 @@ const Gall = () => {
         }
         setTempImgSrc(data[currentIndex].Image);
     }
-    
     const prevImage = () => {
         if(currentIndex === 0){
             setCurrentIndex(data.length -1);
@@ -205,8 +207,6 @@ const Gall = () => {
         }
         setTempImgSrc(data[currentIndex].Image);
     }
-    
-
     return(
         <>
         <div className='model' style={{display: model ? 'flex' : 'none',
@@ -222,22 +222,22 @@ const Gall = () => {
             width={900}
             height={900}
              src={tempimgSrc}/>
-                <span className='fixed w-full flex justify-between gap-4 '>
-                    <button className='text-white  z-[1000]' onClick={prevImage}>Previous</button>
-                    <button className='text-black z-[1000]' onClick={() => setModel(false)}>Close</button>
-                    <button className='text-white z-[1000]' onClick={nextImage}>Next</button>
+                <span className='absolute md:relative md:grid w-full  font-FallCome text-white z-[1000]  '>
+                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon/></button>
+                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon/></button>
+                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon/></button>
                 </span>
         </div>
 
-      <div  className=' transition-all ease-in-out relative  columns-3  '>
+      <div  className=' transition-all ease-in-out relative columns-3  '>
         {data.map((item, index) => {
             return(
             <div className='' key={index} onClick={() => getImg(item.Image)}>
             <Image
             className=''
              alt='alt'
-             width={900}
-             height={900}
+             width={700}
+             height={700}
              src={item.Image}/>
             </div>
             )
