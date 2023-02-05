@@ -8,6 +8,7 @@ module.exports = {
       FallCome: "FallCome",
       Mont: "Mont",
       MontItalic: "MontItalic",
+      Balenci: "Balenci",
     }},
   },
   plugins: [],
