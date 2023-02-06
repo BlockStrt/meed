@@ -22,4 +22,8 @@
   font-family: "Balenci" ;
   src: url('../public/balenci.ttf');
 }
+@font-face {
+  font-family: "Vera" ;
+  src: url('../public/Vera.ttf');
+}
 

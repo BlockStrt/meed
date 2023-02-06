@@ -13,14 +13,19 @@ export default function Gallery(){
           
           <div className='relative md:columns-3 left-0 gap-3 mb-12  text-center mx-auto justify-center
           items-center text-4xl  '>
-            <div className=''>
-            <h1 className=' font-Balenci p-5'>Photography</h1>
-            </div>
+          
+            <h1 className=' font-mono p-5'>Photography</h1>
+            <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
+
+            
+            
           
             <Gall className=''/>
           </div>
           <div className='md:columns-3 text-4xl text-center'>
-          <h1 className=' font-Balenci p-5' >Design</h1>
+          <h1 className=' font-mono p-5' >Design</h1>
+          <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
+
             <Design />
           </div>
         

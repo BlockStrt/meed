@@ -9,6 +9,7 @@ module.exports = {
       Mont: "Mont",
       MontItalic: "MontItalic",
       Balenci: "Balenci",
+      Vera: "Vera",
     }},
   },
   plugins: [],

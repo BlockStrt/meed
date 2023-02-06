@@ -222,10 +222,10 @@ const Gall = () => {
             width={900}
             height={900}
              src={tempimgSrc}/>
-                <span className='absolute md:relative md:grid w-full  font-FallCome text-white z-[1000]  '>
-                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon/></button>
-                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon/></button>
-                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon/></button>
+                <span className='absolute md:relative md:grid w-full  font-FallCome z-[1000]  '>
+                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon sx={{ color: '#eac8a2' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon sx={{ color: '#eac8a2' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon sx={{ color: '#eac8a2' }}/></button>
                 </span>
         </div>
 
