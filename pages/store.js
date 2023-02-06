@@ -64,7 +64,7 @@ export default function Store(){
                
                 <img src={slide.image} alt="" className="object-cover p-10 " />
                 
-                <div className="fixed top-40 left-10  w-full justify-center items-center ">
+                <div className=" top-40 left-10 w-full justify-center items-center mx-auto flex ">
                 <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
                 <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
                 </div>
@@ -76,7 +76,7 @@ export default function Store(){
     
     </div>
             {/* checkout container */}
-        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto mb-28'>
+        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
@@ -111,7 +111,7 @@ export default function Store(){
                             options={[
                             { value: "1", label: "1" },
                             { value: "2", label: "2" },
-                            { value: "3", label: "3" }
+                            { value: "3", label: "3" },
                             ]}
                         />
                         )}
