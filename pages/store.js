@@ -54,7 +54,7 @@ export default function Store(){
         // exit={{opacity: 1}}
          className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 overflow-hidden'>
             {/* parent */}
-<div className='grid md:flex w-[100%] h-[100%]  '>
+<div className='grid md:flex w-[100%] h-[100%] p-2  '>
     
           {/* image container */}
           
@@ -76,7 +76,7 @@ export default function Store(){
     
     </div>
             {/* checkout container */}
-        <div className=' w-[50%] h-[100%] grid items-center justify-center mx-auto mb-28 '>
+        <div className=' w-[50%] h-[40%] grid items-center justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
