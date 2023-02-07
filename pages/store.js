@@ -54,17 +54,17 @@ export default function Store(){
         // exit={{opacity: 1}}
          className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 '>
             {/* parent */}
-<div className='grid md:flex  p-2   '>
+<div className=' md:flex  p-2 h-full  '>
     
           {/* image container */}
           
-    <div className=" w-[100%] md:w-[100%] h-[100%]">
+    <div className=" w-[100%] md:w-[100%] ">
             {slides.map((slide, index) => (
                 <div key={index} className={`relative flex inset-0 z-10 ${index === currentSlide ? 'block' : 'hidden'}`}>
                
-                <img src={slide.image} alt="" className="object-cover p-10 h-[100vh] " />
+                <img src={slide.image} alt="" className="object-cover p-10 h-[100%] md:h-[100vh] " />
                 
-                <div className=" top-40 left-10 w-full justify-center items-center mx-auto flex ">
+                <div className=" top-40 left-10 justify-center items-center mx-auto flex ">
                 <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
                 <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
                 </div>
