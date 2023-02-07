@@ -54,7 +54,7 @@ export default function Store(){
         // exit={{opacity: 1}}
          className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 '>
             {/* parent */}
-<div className='grid md:flex w-[100%] h-[100%] p-2   '>
+<div className='grid md:flex  p-2   '>
     
           {/* image container */}
           
