@@ -52,13 +52,13 @@ export default function Store(){
         // animate={{y: '0%'}}
         // transition={{duration: 0.75, ease: 'easeInOut'}}
         // exit={{opacity: 1}}
-         className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 overflow-hidden'>
+         className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 '>
             {/* parent */}
-<div className='grid md:flex w-[100%] h-[100%] p-2  '>
+<div className='grid md:flex w-[100%] h-[100%] p-2   '>
     
           {/* image container */}
           
-    <div className=" w-[100%] md:w-[50%] h-[100%]">
+    <div className=" w-[100%] md:w-[100%] h-[100%]">
             {slides.map((slide, index) => (
                 <div key={index} className={`relative flex inset-0 z-10 ${index === currentSlide ? 'block' : 'hidden'}`}>
                
@@ -76,7 +76,7 @@ export default function Store(){
     
     </div>
             {/* checkout container */}
-        <div className=' w-[50%] h-[50%] grid items-center justify-center mx-auto mb-28 '>
+        <div className=' w-[100%] h-[50%] grid items-center  justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
