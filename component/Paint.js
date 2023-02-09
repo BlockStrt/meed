@@ -222,7 +222,7 @@ const Paint = () => {
             width={900}
             height={900}
              src={tempimgSrc}/>
-                <span className='absolute md:relative md:grid w-full  font-FallCome z-[1000]  '>
+                <span className='fixed flex w-full justify-center mx-auto  font-FallCome z-[1000] '>
                     <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon sx={{ color: '#eac8a2' }}/></button>
                     <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon sx={{ color: '#eac8a2' }}/></button>
                     <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon sx={{ color: '#eac8a2' }}/></button>

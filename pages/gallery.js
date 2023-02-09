@@ -31,12 +31,12 @@ export default function Gallery(){
             </h1>
             <h1 className=' font-mono p-5'
             onClick={() => setSelectedTab(2)}
-            style={{ cursor: 'pointer' }}>Fashion Design
+            style={{ cursor: 'pointer' }}>Paintings
             <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
             </h1>
             <h1 className=' font-mono p-5'
             onClick={() => setSelectedTab(3)}
-            style={{ cursor: 'pointer' }}>Paintings
+            style={{ cursor: 'pointer' }}>Fashion Design
             <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
             </h1>
           
