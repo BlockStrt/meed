@@ -22,7 +22,7 @@ export default function About(){
         // transition={{duration: 0.75, ease: 'easeInOut'}}
         // exit={{opacity: 1}}
          className='text-white-900 w-screen  bg-[#eac8a2] lg-px48 px-16'>
-            <div className=' p-1 relative  top-28 md:top-1/3 lg:top-1/3 h-screen'>
+            <div className=' p-1 md:p-10 relative  top-28 md:top-1/3 lg:top-1/3 h-screen'>
                 <div className='flex justify-center cursor-pointer gap-2'>
 
                 <Link href='https://t.co/lzXOdx22qJ'>
@@ -55,7 +55,7 @@ export default function About(){
                 <div className='border w-full opacity-10 mx-auto mt-2 border-slate-600'></div>
             </div>
             
-            <section className='h-screen mt-32 lg-px48 px-16 flex
+            <section className='h-screen w-full mx-auto mt-32 md:mt-0 lg-px48  flex
               space-x-5 overflow-x-scroll overscroll-x-none font-mono font-extrabold'>
 
                     <Link href='http://voyageatl.com/interview/rising-stars-meet-maxine-wint-of-chicago-traveling-back-and-forth-to-atl/'>
