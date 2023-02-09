@@ -89,7 +89,8 @@ const Design = () => {
                 </span>
         </div>
 
-      <div  className=' transition-all ease-in-out relative columns-3  '>
+      <div  className=' transition-all ease-in-out relative md:columns-3 left-0 gap-3 mb-12  text-center mx-auto justify-center
+          items-center  '>
         {data.map((item, index) => {
             return(
             <div className='' key={index} onClick={() => getImg(item.Image)}>

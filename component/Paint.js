@@ -44,7 +44,7 @@ import styles from '../styles/Home.module.css'
  const img34 = 'https://cdn.sanity.io/images/cpwmjnrl/production/8c940aafff404b2fc4f2e5142d8e0f80411bd710-7144x7062.jpg'
 
 
-const Gall = () => {
+const Paint = () => {
     let data = [
         {
             id: 1,
@@ -249,4 +249,4 @@ const Gall = () => {
     )
 }
 
-export default Gall
+export default Paint
