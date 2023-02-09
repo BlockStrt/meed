@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Gall from '@/component/Gallery'
-import Design from '@/component/Design'
-import Paint from '@/component/Paint';
+import Design from '@/component/Paint'
+import Paint from '@/component/Design';
 
 
 const FirstComponent = () => {

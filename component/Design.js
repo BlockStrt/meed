@@ -3,19 +3,31 @@ import Image from 'next/image'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import styles from '../styles/Home.module.css'
 
 
 
 
+ const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/2d1d59c5bdff35229f10c2126b0c183913aa35f1-960x1280.jpg';
+ const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/89b55d0aff6b89ae7b245a3829d8930fe3c8237b-1195x1792.jpg';
+ const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/11ac53832d55722259c9d479fcddc63024d330ce-1195x1792.jpg';
+ const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/79e890dc24a3037891c170396f39176866ac1fe5-1195x1792.jpg';
+ const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/41dbe335a70538cf13cc4d42593d9a974c9ffb61-1195x1792.jpg';
+ const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/adad4ff78bb5bc5df1379c1381fcb36be1ffe07e-1433x1792.jpg'
+ const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/197a68323e560208bb1c0075b16f606a18fc79f2-1433x1792.jpg'
+ const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/38860c03814881aa690f2d1d9aa5301c785405ac-1195x1792.jpg'
+ const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4e7fed1bcf7827fac9a8f2cf39055c35f77a9119-1195x1792.jpg'
+ const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/5f9c90be9255415672794eb4226fedb18a5966b7-1434x1792.jpg'
+ const img11 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f9480a60ae41af262db178cc1ddbb9f8c7dae3f2-1195x1792.jpg'
+ const img12 = 'https://cdn.sanity.io/images/cpwmjnrl/production/e60797f675bb9e278c220f1e53fa57bc863991c4-1434x1792.jpg'
+ const img13 = 'https://cdn.sanity.io/images/cpwmjnrl/production/0c890634a9a52f30639e2cd95b6558b3947255a0-1434x1792.jpg'
+ const img14 = 'https://cdn.sanity.io/images/cpwmjnrl/production/482b18535585caf2bde8599b9e791265378e03d2-1195x1792.jpg'
+ const img15 = 'https://cdn.sanity.io/images/cpwmjnrl/production/15065e093f3ad2466771424943617b5e323c7a97-4160x6240.jpg'
+ const img16 = 'https://cdn.sanity.io/images/cpwmjnrl/production/736c20b697b791d8b15ebd40061cd66c67dcec82-4160x6240.jpg'
+ const img17 = 'https://cdn.sanity.io/images/cpwmjnrl/production/1c1f84d17565716eb574b6ee2d83f5a25979847a-3869x5803.jpg'
 
- const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/1c121beb6faa0fd4ceb918ea9c2b5004eb9b7daf-2550x3150.jpg';
- const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3ba5ce618f16037b4f57d79ac6d1b7664eb532a7-2550x3150.jpg';
- const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d85344ee31018e317990d9a4a9a0db7646016047-3920x5628.jpg';
- const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/ba6692d89a30ed33f0b84b9e9598e97de6082645-3024x4032.jpg';
- const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4bef8db8bcc0e504998833c604ccc8a4417e1a79-3024x4032.jpg';
- const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
 
-const Design = () => {
+const Paint = () => {
     let data = [
         {
             id: 1,
@@ -41,7 +53,51 @@ const Design = () => {
             id: 6,
             Image: img6,
         },
-       
+        {
+            id: 7,
+            Image: img7,
+        },
+        {
+            id: 8,
+            Image: img8,
+        },
+        {
+            id: 9,
+            Image: img9,
+        },
+        {
+            id: 10,
+            Image: img10,
+        },
+        {
+            id: 11,
+            Image: img11,
+        },
+        {
+            id: 12,
+            Image: img12,
+        },
+        {
+            id: 13,
+            Image: img13,
+        },
+        {
+            id: 14,
+            Image: img14,
+        },
+        {
+            id: 15,
+            Image: img15,
+        },
+        {
+            id: 16,
+            Image:img16 ,
+        },
+        {
+            id: 17,
+            Image: img17,
+        },
+        
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -79,13 +135,13 @@ const Design = () => {
             className='w-[100px] h-[100px] object-cover justify-center items-center mx-auto'
             id='img'
             alt=''
-            width={500}
-            height={500}
+            width={700}
+            height={700}
              src={tempimgSrc}/>
-                <span className='fixed flex w-full justify-center mx-auto  font-FallCome z-[1000]  '>
-                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon/></button>
-                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon/></button>
-                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon/></button>
+                <span className='fixed flex w-full justify-center mx-auto  font-FallCome z-[1000] '>
+                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon sx={{ color: '#eac8a2' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon sx={{ color: '#eac8a2' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon sx={{ color: '#eac8a2' }}/></button>
                 </span>
         </div>
 
@@ -109,4 +165,4 @@ const Design = () => {
     )
 }
 
-export default Design
+export default Paint
