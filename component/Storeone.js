@@ -47,7 +47,7 @@ const slides = [
         setCurrentProduct(slides[currentSlide]);
     }
     return(
-<div className=' md:flex p-2 h-[100vh]  '>
+<div className=' md:flex p-2 h-[100vh] relative flex inset-0 z-10 justify-center items-center  '>
           {/* image container */}          
     <div className=" w-[100%] md:w-[100%] ">
             {slides.map((slide, index) => (
