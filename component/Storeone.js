@@ -65,7 +65,7 @@ const slides = [
       ))}
     </div>
             {/* checkout container */}
-        <div className=' w-[100%] h-[50%] grid items-center  justify-center mx-auto mb-28 '>
+        <div className=' w-[100%] h-[50%]  items-center  justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
             <div className=' '>
              <ul className=''>
