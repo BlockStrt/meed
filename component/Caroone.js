@@ -36,7 +36,7 @@ const slides = [
     return(
         <div className=" w-[100%] md:w-[100%] ">
         {slides.map((slide, index) => (
-            <div key={index} className={`relative flex inset-0 z-10 justify-center items-center absolute ${index === currentSlide ? 'block' : 'hidden'}`}>
+            <div key={index} className={`relative flex inset-0 z-10 justify-center items-center ${index === currentSlide ? 'block' : 'hidden'}`}>
         
             <img src={slide.image} alt="" className="object-cover p-10 w-full h-[100%] md:h-[100vh] " />
             

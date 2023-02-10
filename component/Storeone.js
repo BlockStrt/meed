@@ -33,20 +33,11 @@ const slides = [
     Qty: { value: "1", label: "1" },
   }
   export default function Storeone(){
-    const [currentSlide, setCurrentSlide] = useState(0);
     const [currentProduct, setCurrentProduct] = useState(slides[0]);
     const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
 
-    const handlePreviousClick = () => {
-        setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
-        setCurrentProduct(slides[currentSlide]);
-    }
-    const handleNextClick = () => {
-        setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-        setCurrentProduct(slides[currentSlide]);
-    }
     return(
 <div className=' md:flex p-2 h-full items-center mx-auto  '>
           {/* image container */}          

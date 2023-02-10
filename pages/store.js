@@ -31,7 +31,7 @@ const slides = [
   }
 
     const FirstComponent = () => {
-        return <div><Storeone/></div>;
+        return <Storeone/>;
         };
         
         const SecondComponent = () => {
@@ -62,10 +62,7 @@ export default function Store(){
         >
           Fashion Designs
           <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
-
         </div>
-        
-
       </div>
       <div>
         {selectedTab === 1 ? <FirstComponent /> : <SecondComponent />}
