@@ -48,7 +48,7 @@ const slides = [
         setCurrentProduct(slides[currentSlide]);
     }
     return(
-<div className=' md:flex p-2 h-[100vh] relative flex inset-0 z-10 justify-center items-center  '>
+<div className=' md:flex p-2 h-full items-center mx-auto  '>
           {/* image container */}          
            <Caroone/>
             {/* checkout container */}
