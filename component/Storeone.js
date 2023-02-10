@@ -51,9 +51,9 @@ const slides = [
           {/* image container */}          
     <div className=" w-[100%] md:w-[100%] ">
             {slides.map((slide, index) => (
-                <div key={index} className={`relative flex inset-0 z-10 justify-center items-center ${index === currentSlide ? 'block' : 'hidden'}`}>
+                <div key={index} className={`relative flex inset-0 z-10 justify-center items-center ${index === currentSlide ? 'inline-block' : 'hidden'}`}>
                
-                <img src={slide.image} alt="" className="object-cover p-10 h-full md:h-[100vh] " />
+                <img src={slide.image} alt="" className="object-cover p-10 w-full md:h-[100vh] " />
                 
                 <div className=" top-40 left-10 justify-center items-center mx-auto flex ">
                 <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
