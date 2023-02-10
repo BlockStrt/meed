@@ -4,6 +4,7 @@ import  ReactSelect from 'react-select';
 import ButtonResult from '@/component/ButtonResult';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Caroone from './Caroone';
 
 
 
@@ -49,21 +50,7 @@ const slides = [
     return(
 <div className=' md:flex p-2 h-[100vh] relative flex inset-0 z-10 justify-center items-center  '>
           {/* image container */}          
-    <div className=" w-[100%] md:w-[100%] ">
-            {slides.map((slide, index) => (
-                <div key={index} className={`relative flex inset-0 z-10 justify-center items-center ${index === currentSlide ? 'inline-block' : 'hidden'}`}>
-               
-                <img src={slide.image} alt="" className="object-cover p-10 w-full md:h-[100vh] " />
-                
-                <div className=" top-40 left-10 justify-center items-center mx-auto flex ">
-                <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
-                <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
-                </div>
-                
-          </div>
-          
-      ))}
-    </div>
+           <Caroone/>
             {/* checkout container */}
         <div className=' w-[100%] h-[50%]  items-center  justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
