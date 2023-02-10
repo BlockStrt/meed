@@ -56,7 +56,7 @@ export default function About(){
             </div>
             
             <section className='h-screen w-full mx-auto mt-32 md:mt-0 lg-px48  flex
-              space-x-5 overflow-x-scroll overscroll-x-none font-mono font-extrabold'>
+              space-x-5 overflow-x-scroll font-mono font-extrabold'>
 
                     <Link href='http://voyageatl.com/interview/rising-stars-meet-maxine-wint-of-chicago-traveling-back-and-forth-to-atl/'>
                     <article className=' border border-slate-600 h-[70%] w-[300px] flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  md:w-[600px] xl:w-[900px] snap-center bg-transparent p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden
