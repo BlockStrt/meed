@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import Storeone from '@/component/Storeone';
-import Storetwo from '@/component/Storetwo';
 
 
 
@@ -29,44 +28,31 @@ const slides = [
   const defaultValues = {
     Qty: { value: "1", label: "1" },
   }
-
-    const FirstComponent = () => {
-        return <Storeone/>;
-        };
-        
-        const SecondComponent = () => {
-        return <div><Storetwo/></div>;
-        };
-  
 export default function Store(){
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentProduct, setCurrentProduct] = useState(slides[0]);
+    const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
+    const [data, setData] = useState(null);
+    const onSubmit = data => console.log(data);
 
-     const [selectedTab, setSelectedTab] = useState(1);
-      
+    const handlePreviousClick = () => {
+        setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+        setCurrentProduct(slides[currentSlide]);
+    }
+    const handleNextClick = () => {
+        setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+        setCurrentProduct(slides[currentSlide]);
+    }
     return(
         <main
-       
-         className='  text-white-900 absolute top-0 left-0 w-full bg-[#7ED095] lg-px48 px-16  '>
+        // initial={{y: '100%'}}
+        // animate={{y: '0%'}}
+        // transition={{duration: 0.75, ease: 'easeInOut'}}
+        // exit={{opacity: 1}}
+         className='  text-white-900 absolute top-0 left-0 w-screen h-screen bg-[#7ED095] lg-px48 px-16 '>
             {/* parent */}
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <div
-          onClick={() => setSelectedTab(1)}
-          style={{ cursor: 'pointer' }}
-        >
-          Paintings
-          <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
+        <Storeone/>
 
-        </div>
-        <div
-          onClick={() => setSelectedTab(2)}
-          style={{ cursor: 'pointer' }}
-        >
-          Fashion Designs
-          <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
-        </div>
-      </div>
-      <div>
-        {selectedTab === 1 ? <FirstComponent /> : <SecondComponent />}
-      </div>
         </main>
     )
 }
