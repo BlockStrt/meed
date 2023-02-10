@@ -4,7 +4,7 @@ import  ReactSelect from 'react-select';
 import ButtonResult from '@/component/ButtonResult';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Caroone from './Caroone';
+import Caro from './Caroone';
 
 
 
@@ -40,8 +40,9 @@ const slides = [
 
     return(
 <div className=' md:flex p-2 h-full items-center mx-auto  '>
-          {/* image container */}          
-           <Caroone/>
+          {/* image container */}  
+          <div><Caro/></div>  
+          
             {/* checkout container */}
         <div className=' w-[100%] h-[50%]  items-center  justify-center mx-auto mb-28 '>
             {/* Title pricing container */}
