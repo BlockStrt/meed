@@ -4,7 +4,7 @@ import  ReactSelect from 'react-select';
 import ButtonResult from '@/component/ButtonResult';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Image from 'next/image';
+import Card from './Card';
 
 
 
@@ -39,96 +39,60 @@ const slides = [
     const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
-
     const handlePreviousClick = () => {
-        setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+        setCurrentSlide(
+          currentSlide === 0 ? slides.length - 1 : currentSlide - 1
+        );
         setCurrentProduct(slides[currentSlide]);
-    }
-    const handleNextClick = () => {
-        setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+      };
+    
+      const handleNextClick = () => {
+        setCurrentSlide(
+          currentSlide === slides.length - 1 ? 0 : currentSlide + 1
+        );
         setCurrentProduct(slides[currentSlide]);
-    }
+      };
     return(
-<div className=' md:flex  p-2 h-[100vh]  '>
-          {/* image container */}          
-    <div className=" w-[100%] md:w-[100%] ">
-            {slides.map((slide, index) => (
-                <div key={index} className={`relative flex inset-0 z-10 justify-center items-center ${index === currentSlide ? 'block' : 'hidden'}`}>
-               
-                <Image src={slide.image} width={200} height={200} key={index} alt="" className="object-cover p-10   " />
-                
-                <div className=" top-40 left-10 justify-center items-center mx-auto flex ">
-                <button className='text-3xl ' onClick={handlePreviousClick}><ArrowBackIosIcon/></button>
-                <button className='text-3xl ' onClick={handleNextClick}><ArrowForwardIosIcon /></button>
-                </div>
-                
-          </div>
-          
-      ))}
-    </div>
-            {/* checkout container */}
-        <div className=' w-[100%] h-[50%] grid items-center  justify-center mx-auto mb-28 '>
-            {/* Title pricing container */}
-            <div className=' '>
-             <ul className=''>
-                <li>
-                <h1 className='text-2xl'>{currentProduct.title}</h1>
-                </li>
-                <li className='m-1'>
-                    <p>
-                        <strong>{currentProduct.price}</strong>
-                    </p>
-                </li>
-             </ul>
-             {/* shippig info  */}
-                <div>
-                    <h2 className='m-1'>Details</h2>
-                    <div className='w-full border border-black opacity-10'></div>
-                </div>
-                <div>
-                    <p className='mt-4 uppercase mb-4'>please alow 1-2 days for item to ship after payments</p>
-                </div>
+<div className=' md:flex h-screen bg-[#7ED095] relative '>
 
-                <form onSubmit={handleSubmit(onSubmit)}>
-                <label className='p-2 '>Quantity</label>
-                <div className='w-full border border-black mb-2 mt-1 opacity-10'></div>
-                    <Controller
-                        name="Qty"
-                        control={control}
-                        render={({ field }) => (
-                        <ReactSelect
-                            isClearable
-                            {...field}
-                            options={[
-                            { value: "1", label: "1" },
-                            { value: "2", label: "2" },
-                            { value: "3", label: "3" },
-                            ]}
-                        />
-                        )}
-                    />
-                <label className='p-2'>Coming soon</label>
-                <div className='w-full border border-black mb-2 mt-1 opacity-10'></div>
-                    <Controller
-                        name="Coming"
-                        control={control}
-                        render={({ field }) => (
-                        <ReactSelect
-                            isClearable
-                            {...field}
-                            options={[
-                            { value: "Coming soon", label: "Coming soon" },
-                            { value: "Coming soon", label: "Coming soon" },
-                            { value: "Coming soon", label: "Coming soon" }
-                            ]}
-                        />
-                        )}
-                    />
-                    <ButtonResult {...{ data, reset, setValue }} />
-                </form>
+          {/* image container */}  
+          <div className='text-center py-4 text-xl font-bold'> Proudcts</div> 
+          <div className=' absolute flex right-0 top-4'>
+            <button className='p-4 bg-white'><ArrowBackIosIcon/></button>
+            <button className='p-4 bg-white'><ArrowForwardIosIcon/></button>
+        </div>
+          <div className='mx-auto flex w-full space-x-5 p-4 items-center justify-start overflow-x-scroll
+          relative '>
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         
+ 
             
-            </div>
-        </div>       
+        
 </div>
+</div>
+
     )
   }
