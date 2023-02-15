@@ -10,7 +10,7 @@ import Storeone from '@/component/Storeone';
 
 
 const FirstComponent = () => {
-  return <div><Storeone/></div>;
+  return <div className=' mt-24 md:mt-0'><Storeone/></div>;
   };
   
   const SecondComponent = () => {
