@@ -14,7 +14,7 @@ const FirstComponent = () => {
   };
   
   const SecondComponent = () => {
-  return <div><Storetwo/></div>;
+  return <div className=' mt-24 md:mt-0'><Storetwo/></div>;
   };
 
 

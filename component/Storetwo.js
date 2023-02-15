@@ -40,22 +40,18 @@ const slides = [
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
     const scrollLeft = () => {
-        document.getElementById('content').scrollLeft -=800;
+        document.getElementById('content').scrollLeft -=200;
     }
     const scrollRight = () => {
-        document.getElementById('content').scrollLeft +=800;
+        document.getElementById('content').scrollLeft +=200;
     }
     return(
 <div className=' md:flex h-screen bg-[#7ED095] relative '>
 
           {/* image container */}  
-          <div className='text-center py-4 text-xl font-bold'> Proudcts</div> 
-          <div className=' fixed flex '>
-            <button onClick={scrollLeft} className='p-4 bg-white'><ArrowBackIosIcon/></button>
-            <button onClick={scrollRight} className='p-4 bg-white'><ArrowForwardIosIcon/></button>
-        </div>
-          <div id='content' className='carousel mx-auto flex w-full h-screen space-x-5 p-4 items-center justify-start overflow-x-scroll
-          relative scrollbar-hide scroll-smooth '>
+         
+          <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-center overflow-x-scroll
+          relative scrollbar-hide scroll-smooth  '>
          <div>
           <CardTwo/>       
          </div>      
@@ -81,11 +77,11 @@ const slides = [
           <CardTwo/>       
          </div>      
               
-         
- 
-            
-        
 </div>
+<div className=' p-5 flex relative '>
+            <button onClick={scrollLeft} className='p-4 bg-white z-1000'><ArrowBackIosIcon/></button>
+            <button onClick={scrollRight} className='p-4 bg-white z-1000'><ArrowForwardIosIcon/></button>
+        </div>
 </div>
 
     )
