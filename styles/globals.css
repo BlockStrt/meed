@@ -31,5 +31,7 @@
   display: none;
  
 }
-
+.carousel{
+  scroll-behavior: smooth;
+}
 
