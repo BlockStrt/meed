@@ -40,10 +40,10 @@ const slides = [
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
     const scrollLeft = () => {
-        document.getElementById('content').scrollLeft -=800;
+        document.getElementById('content').scrollLeft -=200;
     }
     const scrollRight = () => {
-        document.getElementById('content').scrollLeft +=800;
+        document.getElementById('content').scrollLeft +=200;
     }
     return(
 <div className=' md:flex h-screen bg-[#7ED095] relative '>
@@ -75,8 +75,20 @@ const slides = [
          <div>
           <Card/>       
          </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
+         <div>
+          <Card/>       
+         </div>      
 </div>
-<div className=' fixed flex  '>
+<div className=' p-5 flex relative '>
             <button onClick={scrollLeft} className='p-4 bg-white z-1000'><ArrowBackIosIcon/></button>
             <button onClick={scrollRight} className='p-4 bg-white z-1000'><ArrowForwardIosIcon/></button>
         </div>
