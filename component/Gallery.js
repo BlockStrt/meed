@@ -229,7 +229,7 @@ const Gall = () => {
                 </span>
         </div>
 
-      <div  className=' transition-all ease-in-out relative md:columns-3 left-0 gap-3 mb-12  text-center mx-auto justify-center
+      <div  className=' transition-all ease-in-out relative  left-0 gap-3 mb-12  text-center mx-auto justify-center
           items-center  '>
         {data.map((item, index) => {
             return(

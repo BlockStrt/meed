@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
 
       <nav  className=' w-full h-24 fixed top-0 flex justify-between p-5 1xl md:text-3xl lg:text-5xl'>
-        <div className=' font-FallCome ' >Maxine Wint.</div>
+        <div className=' font-FallCome text-4xl md:text-5xl ' >Maxine Wint.</div>
        
       </nav>
 

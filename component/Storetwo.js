@@ -50,7 +50,7 @@ const slides = [
 
           {/* image container */}  
          
-          <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-center overflow-x-scroll
+          <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-start overflow-x-scroll
           relative scrollbar-hide scroll-smooth  '>
          <div>
           <CardTwo/>       

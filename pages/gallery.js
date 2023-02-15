@@ -5,11 +5,11 @@ import Paint from '@/component/Design';
 
 
 const FirstComponent = () => {
-  return <div><Gall/></div>;
+  return <div className='md:columns-3'><Gall/></div>;
   };
   
   const SecondComponent = () => {
-  return <div><Design/></div>;
+  return <div ><Design/></div>;
   };
   const ThirdComponent = () => {
   return <div><Paint/></div>;

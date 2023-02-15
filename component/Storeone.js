@@ -49,7 +49,7 @@ const slides = [
 <div className=' md:flex h-screen bg-[#7ED095] relative '>
 
           {/* image container */}  
-          <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-center overflow-x-scroll
+          <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-start overflow-x-scroll
           relative scrollbar-hide scroll-smooth '>
          <div>
           <Card/>       
@@ -78,15 +78,7 @@ const slides = [
          <div>
           <Card/>       
          </div>      
-         <div>
-          <Card/>       
-         </div>      
-         <div>
-          <Card/>       
-         </div>      
-         <div>
-          <Card/>       
-         </div>      
+            
 </div>
 <div className=' p-5 flex relative '>
             <button onClick={scrollLeft} className='p-4 bg-white z-1000'><ArrowBackIosIcon/></button>
