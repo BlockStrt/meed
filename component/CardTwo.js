@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-const sd = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
+const sd = 'https://cdn.sanity.io/images/cpwmjnrl/production/4bef8db8bcc0e504998833c604ccc8a4417e1a79-3024x4032.jpg'
 
 const slides = [
   {
@@ -29,7 +29,7 @@ const slides = [
   }
 ];
 
- const Card = () => {
+ const CardTwo = () => {
 
   return (
     
@@ -49,4 +49,4 @@ const slides = [
         </div>
         
         )}
-        export default Card
+        export default CardTwo

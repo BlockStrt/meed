@@ -39,30 +39,23 @@ const slides = [
     const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
     const [data, setData] = useState(null);
     const onSubmit = data => console.log(data);
-    const handlePreviousClick = () => {
-        setCurrentSlide(
-          currentSlide === 0 ? slides.length - 1 : currentSlide - 1
-        );
-        setCurrentProduct(slides[currentSlide]);
-      };
-    
-      const handleNextClick = () => {
-        setCurrentSlide(
-          currentSlide === slides.length - 1 ? 0 : currentSlide + 1
-        );
-        setCurrentProduct(slides[currentSlide]);
-      };
+    const scrollLeft = () => {
+        document.getElementById('content').scrollLeft -=800;
+    }
+    const scrollRight = () => {
+        document.getElementById('content').scrollLeft +=800;
+    }
     return(
 <div className=' md:flex h-screen bg-[#7ED095] relative '>
 
           {/* image container */}  
           <div className='text-center py-4 text-xl font-bold'> Proudcts</div> 
-          <div className=' absolute flex right-0 top-4'>
-            <button className='p-4 bg-white'><ArrowBackIosIcon/></button>
-            <button className='p-4 bg-white'><ArrowForwardIosIcon/></button>
+          <div className=' fixed flex '>
+            <button onClick={scrollLeft} className='p-4 bg-white'><ArrowBackIosIcon/></button>
+            <button onClick={scrollRight} className='p-4 bg-white'><ArrowForwardIosIcon/></button>
         </div>
-          <div className='mx-auto flex w-full space-x-5 p-4 items-center justify-start overflow-x-scroll
-          relative '>
+          <div id='content' className='carousel mx-auto flex w-full h-screen space-x-5 p-4 items-center justify-start overflow-x-scroll
+          relative scrollbar-hide scroll-smooth '>
          <div>
           <Card/>       
          </div>      
@@ -87,6 +80,7 @@ const slides = [
          <div>
           <Card/>       
          </div>      
+              
          
  
             

@@ -27,3 +27,9 @@
   src: url('../public//Vera.ttf');
 }
 
+::-webkit-scrollbar {
+  display: none;
+ 
+}
+
+

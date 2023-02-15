@@ -25,6 +25,7 @@
     "react-hook-form": "^7.42.1",
     "react-multi-carousel": "^2.8.2",
     "react-select": "^5.7.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
