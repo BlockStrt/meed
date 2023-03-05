@@ -3,7 +3,7 @@ import Image from 'next/image'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import styles from '../styles/Home.module.css'
+
 
 
 

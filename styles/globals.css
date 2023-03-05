@@ -35,3 +35,22 @@
   scroll-behavior: smooth;
 }
 
+.price{
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.purchase{
+  padding: 4px;
+}
+
+.addcart{
+  padding: 4px;
+  background-color: transparent;
+}
+
+.addcart:hover{
+  background-color: green;
+ color: white;
+ transition: 0.5s ease-in-out;
+}

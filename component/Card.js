@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 const sd = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
 
@@ -30,23 +29,36 @@ const slides = [
 ];
 
  const Card = () => {
-
+  const [selectedImage, setSelectedImage] = useState(null);
+  const handleCloseFullScreenImage = () => {
+    setSelectedImage(false);
+  }
   return (
     
     <div className="card  w-[200px] h-[300px] m-2 rounded-lg shadow-lg scroll-smooth" id='card'>
      <div className='' id='top'>
-        <Image src={sd} width={400} height={400}></Image>
+     {selectedImage ? (
+          <div className="selected-image">
+            <Image src={selectedImage} width={800} height={800} />
+            <button  onClick={handleCloseFullScreenImage}> close</button>
+          </div>
+        ) : (
+          <Image src={sd} width={400} height={400} onClick={() => setSelectedImage(sd)} />
+          
+        )}
      </div>
     <div className='flex flex-col justify-center items-center p-3' id='bottom'>
       <div className='my-1 font-semibold text-sm' id='title'>Item name</div>
-      <div className=' my-1 text-xs' id='category'>category</div>
+      <div className=' my-1 text-xs' id='category'>Inkjet Printing</div>
     </div>
-    <div className='flex justify-between items-center my-2'>
-    <div className='text-red-500' id='price'>$100</div>
-    <button  className='border rounded-lg ml-4 text-sm  '>Purchase</button>
-    <button className='border rounded-lg ml-4 text-sm'> Add to Cart</button>
+    <div className=' justify-between items-center my-2'>
+    <div className='price font-bold text-center ' id='price'>$100</div>
+
+    <div className='text-center'>
+    <button  className='purchase  ml-4 text-xs'>Purchase</button>
+    <button className='addcart text-sm border'> Add to Cart</button>
+    </div>
     </div>
         </div>
-        
         )}
         export default Card
