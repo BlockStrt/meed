@@ -47,16 +47,16 @@ const slides = [
           
         )}
      </div>
-    <div className='flex flex-col justify-center items-center p-3' id='bottom'>
+    <div className='flex flex-col justify-center items-center p-3 cursor-none' id='bottom'>
       <div className='my-1 font-semibold text-sm' id='title'>Item name</div>
       <div className=' my-1 text-xs' id='category'>Inkjet Printing</div>
     </div>
-    <div className=' justify-between items-center my-2'>
+    <div className=' justify-between items-center my-2cursor-none'>
     <div className='price font-bold text-center ' id='price'>$100</div>
 
     <div className='text-center'>
-    <button  className='purchase  ml-4 text-xs'>Purchase</button>
-    <button className='addcart text-sm border'> Add to Cart</button>
+    <div  className='purchase  ml-4 text-xs'>Purchase</div>
+    <button className='addcart text-sm border cursor-pointer'> Add to Cart</button>
     </div>
     </div>
         </div>

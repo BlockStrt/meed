@@ -36,7 +36,7 @@ export default function Store(){
         </div>
         <div
           onClick={() => setSelectedTab(2)}
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', zIndex: '1000', }}
         >
           Fashion Designs
           <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>

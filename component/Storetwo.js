@@ -78,7 +78,7 @@ const slides = [
          </div>      
               
 </div>
-<div className=' p-5 flex relative '>
+<div className=' p-5 flex relative justify-center'>
             <button onClick={scrollLeft} className='p-4 bg-white z-1000'><ArrowBackIosIcon/></button>
             <button onClick={scrollRight} className='p-4 bg-white z-1000'><ArrowForwardIosIcon/></button>
         </div>
