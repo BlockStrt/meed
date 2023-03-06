@@ -25,7 +25,7 @@ export default function Store(){
       <main
       className='  text-white-900 absolute top-0 left-0 w-full bg-[#7ED095] lg-px48 px-16  '>
       {/* parent */}
-      <div className='mt-[50%]' style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <div className='options md:mt-0' style={{ display: 'flex', justifyContent: 'space-around' }}>
         <div
           onClick={() => setSelectedTab(1)}
           style={{ cursor: 'pointer' }}
