@@ -2,19 +2,40 @@ import Head from 'next/head'
 import {motion as m} from 'framer-motion'
 import VideoBackground from '@/component/video'
 
-
-
-
 export default function Home() {
+ 
+
   return (
     <>
-    <VideoBackground/>
+    {/* iphone screen */}
+    <div className="wrapper">
+      <h1 className=' font-Balenci'>Welcome</h1>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+    {/* iphone screen */}
+    <div class='video'>
+   <VideoBackground/>
+   </div>
     <div
     //  initial={{x: '100%'}}
     //  animate={{x: '0%'}}
     //  transition={{duration: 1.75, ease: 'easeInOut'}}
     //  exit={{opacity: 1}}
-     className="h-screen fixed  mx-auto max-auto overflow-hidden w-screen text-red-300 " >
+     className="back h-screen fixed  mx-auto max-auto overflow-hidden w-screen text-red-300 " >
 
       <Head>
         <title>Maxine Wint</title>
@@ -35,6 +56,7 @@ export default function Home() {
       
       </main>
     </div>
+  
     </>
   )
 }

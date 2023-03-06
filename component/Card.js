@@ -47,7 +47,7 @@ const slides = [
           
         )}
      </div>
-    <div className='flex flex-col justify-center items-center p-3 cursor-none' id='bottom'>
+    <div className='flex flex-col justify-center text-center items-center p-3 cursor-none' id='bottom'>
       <div className='my-1 font-semibold text-sm' id='title'>Item name</div>
       <div className=' my-1 text-xs' id='category'>Inkjet Printing</div>
     </div>
