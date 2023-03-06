@@ -25,7 +25,7 @@ export default function Store(){
       <main
       className='  text-white-900 absolute top-0 left-0 w-full bg-[#7ED095] lg-px48 px-16  '>
       {/* parent */}
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <div className='mt-[50%]' style={{ display: 'flex', justifyContent: 'space-around' }}>
         <div
           onClick={() => setSelectedTab(1)}
           style={{ cursor: 'pointer' }}
@@ -42,6 +42,7 @@ export default function Store(){
           <div className='border w-[50%]  mx-auto mb-5 border-slate-900'></div>
         </div>
         </div>
+        <div className='border w-full opacity-10 mx-auto mt-2 border-slate-600'></div>
         <div>
           {selectedTab === 1 ? <FirstComponent /> : <SecondComponent />}
         </div>
