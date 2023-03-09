@@ -14,10 +14,7 @@ const FirstComponent = () => {
   const ThirdComponent = () => {
   return <div><Paint/></div>;
   };
-  const FourthComponent = () => {
-    return <div className=' mt-24 md:mt-0'><Storetwo/></div>;
-    };
-
+ 
   
 
 export default function Gallery(){
