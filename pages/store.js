@@ -18,6 +18,7 @@ const FirstComponent = () => {
   };
 
 
+
 export default function Store(){
   const [selectedTab, setSelectedTab] = useState(1);
 
@@ -46,6 +47,8 @@ export default function Store(){
         <div>
           {selectedTab === 1 ? <FirstComponent /> : <SecondComponent />}
         </div>
+
         </main>
+     
     )
 }

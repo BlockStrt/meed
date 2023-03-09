@@ -14,10 +14,15 @@ const FirstComponent = () => {
   const ThirdComponent = () => {
   return <div><Paint/></div>;
   };
+  const FourthComponent = () => {
+    return <div className=' mt-24 md:mt-0'><Storetwo/></div>;
+    };
 
+  
 
 export default function Gallery(){
   const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedOption, setSelectedOption] = useState();
 
     return(
         <main
@@ -41,11 +46,10 @@ export default function Gallery(){
             </h1>
           
             </div>
-          
             <div>
         {selectedTab === 1 ? <FirstComponent /> : selectedTab === 2 ? <SecondComponent/> : <ThirdComponent/>}
         </div>
-        
+
         </main>
     )
 }

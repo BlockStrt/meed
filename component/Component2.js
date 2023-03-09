@@ -5,17 +5,20 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
 
+const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f47a59757731feb599f19476b5f5c099e8b5ecaf-3228x4917.jpg';
+const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d8d8cb10f76b2b7981214c1de4917adf56108300-3840x5760.jpg';
+const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/105b596c0d8268ec1650f7ed6b23550e7c3b79e3-3840x5760.jpg';
+const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/66ca3ac38e66429367f2498f0e464c7217fb8f2b-3840x5760.jpg';
+const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/480bc7e2a7e620b52ffd62da41666fa0cb57dded-3840x5760.jpg';
+const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/a289917b8d9eeea6f93f4a635538dfc456a2e742-3840x5760.jpg';
+const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f680886600166acc868b18be95d7c14eac0d2e24-3720x5598.jpg';
+const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/38a969284d81469527219432b5a41488cc849022-3840x5760.jpg';
+const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/cea5eb96bcf8f535ca36d7003521c0a6e2929999-3417x5527.jpg';
+const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/4a28caf2aa82cae04183a0f666a97b7e87d4a643-3840x5760.jpg';
 
 
 
- const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/1c121beb6faa0fd4ceb918ea9c2b5004eb9b7daf-2550x3150.jpg';
- const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3ba5ce618f16037b4f57d79ac6d1b7664eb532a7-2550x3150.jpg';
- const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d85344ee31018e317990d9a4a9a0db7646016047-3920x5628.jpg';
- const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/ba6692d89a30ed33f0b84b9e9598e97de6082645-3024x4032.jpg';
- const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/4bef8db8bcc0e504998833c604ccc8a4417e1a79-3024x4032.jpg';
- const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/03413995552f59fbc3e8d98517442fe2db87eed7-3024x4032.jpg'
-
-const Design = () => {
+const Component2 = () => {
     let data = [
         {
             id: 1,
@@ -41,11 +44,28 @@ const Design = () => {
             id: 6,
             Image: img6,
         },
-       
+        {
+            id: 7,
+            Image: img7,
+        },
+        {
+            id: 8,
+            Image: img8,
+        },
+        {
+            id: 9,
+            Image: img9,
+        },
+        {
+            id: 10,
+            Image: img10,
+        },
+      
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedOption, setSelectedOption] = useState();
     const getImg = (Image) => {
         setTempImgSrc(Image);
         setModel(true)
@@ -67,7 +87,7 @@ const Design = () => {
         }
         setTempImgSrc(data[currentIndex].Image);
     }
-    return(
+    return (
         <>
         <div className='model' style={{display: model ? 'flex' : 'none',
         width:'100vw', height:'100vh', zIndex:'999', position:'fixed', top:'50%', transform:'translate(-50%, -50%)',
@@ -79,17 +99,17 @@ const Design = () => {
             className='w-[100px] h-[100px] object-cover justify-center items-center mx-auto'
             id='img'
             alt=''
-            width={500}
-            height={500}
+            width={600}
+            height={600}
              src={tempimgSrc}/>
                 <span className='fixed flex w-full justify-center mx-auto  font-FallCome z-[1000]  '>
-                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon sx={{color:'#'}}/></button>
-                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon sx={{color:'#FF1493'}}/></button>
-                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon sx={{color:'#FF1493'}}/></button>
+                    <button className='  z-[1000] p-5' onClick={prevImage}><ArrowCircleLeftIcon sx={{ color: '#FFB6C1' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={() => setModel(false)}><CloseIcon sx={{ color: '#FFB6C1' }}/></button>
+                    <button className=' z-[1000] p-5' onClick={nextImage}><ArrowCircleRightIcon sx={{ color: '#FFB6C1' }}/></button>
                 </span>
         </div>
 
-      <div  className=' transition-all ease-in-out relative md:columns-3 left-0 gap-3 mb-12  text-center mx-auto justify-center
+      <div  className=' transition-all ease-in-out relative  left-0 gap-3 mb-12  text-center mx-auto justify-center
           items-center  '>
         {data.map((item, index) => {
             return(
@@ -104,9 +124,8 @@ const Design = () => {
             )
         })}
       </div>
-
-        </>
+      </>
     )
 }
 
-export default Design
+export default Component2;

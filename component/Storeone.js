@@ -46,7 +46,7 @@ const slides = [
         document.getElementById('content').scrollLeft +=200;
     }
     return(
-<div className=' md:flex h-screen bg-[#7ED095] relative '>
+<div className=' md:flex h-screen  relative '>
 
           {/* image container */}  
           <div id='content' className='carousel mx-auto flex w-full  mt-32 md:mt-0 lg-px48  space-x-5 p-4 items-center justify-start overflow-x-scroll
@@ -85,6 +85,7 @@ const slides = [
             <button onClick={scrollRight} className='p-4 bg-white z-1000'><ArrowForwardIosIcon/></button>
         </div>
 </div>
+
 
     )
   }
