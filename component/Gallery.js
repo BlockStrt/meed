@@ -3,6 +3,8 @@ import Component1 from './Component1';
 import Component2 from './Component2';
 import Component3 from './Component3';
 import Component4 from './Component4';
+import Component5 from './Component5';
+import Component6 from './Component6';
 
 
 const Gall = () => {
@@ -46,6 +48,12 @@ const Gall = () => {
         case 'option4':
           componentToRender = <Component4 />;
           break;
+        case 'option5':
+          componentToRender = <Component5 />;
+          break;
+        case 'option6':
+          componentToRender = <Component6 />;
+          break;
         default:
           componentToRender = null;
           break;
@@ -64,6 +72,9 @@ const Gall = () => {
                   <option value='option2'>Hiedy Ganga Winter</option>
                   <option value='option3'>Hiedy Shoot</option>
                   <option value='option4'>Herb 2 the Moon</option>
+                  <option value='option5'>Janaya Shoot</option>
+                  <option value='option6'>Essexx Shoot</option>
+                  <option value='option7'>2 the Future</option>
                 </select>
                  {/*Create components to store each different photoshoot & 
                  Conditonally render each one along the drop down of selections  */}
