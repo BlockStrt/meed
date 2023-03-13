@@ -4,24 +4,26 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
-const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d78a8de439a67c62367480e9e63f5eca692eb38f-1920x2880.jpg';
-const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/31d75efccba9dd1754a94fef2ff7f23d1eb40b71-1648x2473.jpg';
-const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/45f3533749e35a2a46004bb017c3260ffae92f25-1920x2880.jpg';
-const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/70e9a201c13a8f4ce7ec7ee1b0ad3275dd5eb252-3423x5135.jpg';
-const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/222f1ac495521c8aac2dd868010a6f61e54929cd-1920x2880.jpg';
-const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3bc5717e1cf7a1427ac49ba71674c0f549b45b04-1920x2880.jpg';
-const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/54ca7364521a46e9d4baef1b8b991f4626796ca8-3333x4999.jpg';
-const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/53ae4f7685191e7ceeba264ebf7e11d4d2cc3c33-3840x5760.jpg';
-const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/819a0658c2411809aebd008ed2954aa1b315ae11-3840x5760.jpg';
-const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/49f2b0da4504dc946ba8bbd71296abe3a3f5f1f7-3840x5760.jpg';
-const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/601b475f5091b8d6c60f49a3b31db2c27f8ddaf7-3840x5760.jpg';
-const img12= 'https://cdn.sanity.io/images/cpwmjnrl/production/57b997cfc18a4cc8109121f386a01f8675bae048-3840x5760.jpg';
-const img13= 'https://cdn.sanity.io/images/cpwmjnrl/production/a988dcaa47adba048ced5c4002048246744cabc9-3840x5760.jpg';
-const img14= 'https://cdn.sanity.io/images/cpwmjnrl/production/84b3094cb7f0517a803c0bf3a30c0c9d20383382-3439x5158.jpg';
+
+const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/16adf5e1f9a5b7a9d05e8b4dda4b036ec9b1a16f-3070x4605.jpg';
+const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/0c24d63e891374120e9846e2568a7b2f90422fae-3267x4900.jpg';
+const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/0fe003828857276a08bf83de395b8117eb3e5ea5-3105x4657.jpg';
+const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/5ac82e8c5e0479081142da5be7be6c45fb4a9a7f-3014x4521.jpg';
+const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/6b889e0fd5113fc866aaf6481023ed36f5ea9118-3304x4956.jpg';
+const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/6e1e4126502e10d645fe69d41aef2a84e64d52e9-3559x5338.jpg';
+const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/e25d3f5db0f0a676d882d6b4171ca8261da87b54-3367x5051.jpg';
+const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/7206a6b117f42223a7573f3a2b4f348ae451fe81-3121x4682.jpg';
+const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d333e38f789bfd8b531c832108e7456036c0ef68-3421x5131.jpg';
+const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/7efe6e5ab2d3d1449469ab8f70203c1d83400318-3727x5590.jpg';
+const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/c4b516d9befe957ca2124191a082a50a63b5f2e0-3840x5760.jpg';
 
 
-const Component7 = () => {
-let data = [ {
+
+
+
+const Component12 = () => {
+    let data = [
+        {
             id: 1,
             Image: img1,
         },
@@ -65,18 +67,8 @@ let data = [ {
             id: 11,
             Image: img11,
         },
-        {
-            id: 12,
-            Image: img12,
-        },
-        {
-            id: 13,
-            Image: img13,
-        },
-        {
-            id: 14,
-            Image: img14,
-        },
+    
+      
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -103,9 +95,6 @@ let data = [ {
         }
         setTempImgSrc(data[currentIndex].Image);
     }
-
-
-
     return (
         <>
         <div className='model' style={{display: model ? 'flex' : 'none',
@@ -147,4 +136,4 @@ let data = [ {
     )
 }
 
-export default Component7;
+export default Component12;

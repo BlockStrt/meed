@@ -5,6 +5,12 @@ import Component3 from './Component3';
 import Component4 from './Component4';
 import Component5 from './Component5';
 import Component6 from './Component6';
+import Component7 from './Component7';
+import Component8 from './Component8';
+import Component9 from './Component9';
+import Component10 from './Component10';
+import Component11 from './Component11';
+import Component12 from './Component12';
 
 
 const Gall = () => {
@@ -54,6 +60,24 @@ const Gall = () => {
         case 'option6':
           componentToRender = <Component6 />;
           break;
+        case 'option7':
+          componentToRender = <Component7 />;
+          break;
+        case 'option8':
+          componentToRender = <Component8 />;
+          break;
+        case 'option9':
+          componentToRender = <Component9 />;
+          break;
+        case 'option10':
+          componentToRender = <Component10 />;
+          break;
+        case 'option11':
+          componentToRender = <Component11 />;
+          break;
+        case 'option12':
+          componentToRender = <Component12 />;
+          break;
         default:
           componentToRender = null;
           break;
@@ -73,8 +97,14 @@ const Gall = () => {
                   <option value='option3'>Hiedy Shoot</option>
                   <option value='option4'>Herb 2 the Moon</option>
                   <option value='option5'>Janaya Shoot</option>
-                  <option value='option6'>Essexx Shoot</option>
-                  <option value='option7'>2 the Future</option>
+                  <option value='option6'>2 The Future</option>
+                  <option value='option7'>Essexx Shoot</option>
+                  <option value='option8'>Zi Shoot</option>
+                  <option value='option9'>Kaitlyn Shoot</option>
+                  <option value='option10'>Adia Cover Art</option>
+                  <option value='option11'>Yahaira Shoot</option>
+                  <option value='option12'>Aisha Shoot</option>
+                  <option value='option13'>Maxx Digital Shoot</option>
                 </select>
                  {/*Create components to store each different photoshoot & 
                  Conditonally render each one along the drop down of selections  */}

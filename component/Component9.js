@@ -4,23 +4,24 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
-const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d78a8de439a67c62367480e9e63f5eca692eb38f-1920x2880.jpg';
-const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/31d75efccba9dd1754a94fef2ff7f23d1eb40b71-1648x2473.jpg';
-const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/45f3533749e35a2a46004bb017c3260ffae92f25-1920x2880.jpg';
-const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/70e9a201c13a8f4ce7ec7ee1b0ad3275dd5eb252-3423x5135.jpg';
-const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/222f1ac495521c8aac2dd868010a6f61e54929cd-1920x2880.jpg';
-const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3bc5717e1cf7a1427ac49ba71674c0f549b45b04-1920x2880.jpg';
-const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/54ca7364521a46e9d4baef1b8b991f4626796ca8-3333x4999.jpg';
-const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/53ae4f7685191e7ceeba264ebf7e11d4d2cc3c33-3840x5760.jpg';
-const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/819a0658c2411809aebd008ed2954aa1b315ae11-3840x5760.jpg';
-const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/49f2b0da4504dc946ba8bbd71296abe3a3f5f1f7-3840x5760.jpg';
-const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/601b475f5091b8d6c60f49a3b31db2c27f8ddaf7-3840x5760.jpg';
-const img12= 'https://cdn.sanity.io/images/cpwmjnrl/production/57b997cfc18a4cc8109121f386a01f8675bae048-3840x5760.jpg';
-const img13= 'https://cdn.sanity.io/images/cpwmjnrl/production/a988dcaa47adba048ced5c4002048246744cabc9-3840x5760.jpg';
-const img14= 'https://cdn.sanity.io/images/cpwmjnrl/production/84b3094cb7f0517a803c0bf3a30c0c9d20383382-3439x5158.jpg';
+const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/764973d2b229465cdac0d482784b7e3749986bbe-3840x5760.jpg';
+const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/5cf26d4912bc739a444ba602f208eb7c3edd4eee-3840x5760.jpg';
+const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/c8b8350196bc52601436fe5c5188f2e24ca8e5a8-3656x5484.jpg';
+const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/1fb2f4c07d74ff3518304b8d242bb61c3b5a83cb-3840x5760.jpg';
+const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/0ea9b75fbbfe5d29944f93f8dbd4415380c681ff-3574x5361.jpg';
+const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/57ffe6ed759d3e257a663f8c8bf7a012ca4b7d27-3840x5760.jpg';
+const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/556445a192e42ea04149147bde249fffc16932bf-3840x5760.jpg';
+const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f8b9b452f57283eec71788e0f7eb9a266a04a6ae-3374x5061.jpg';
+const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/feb08aeccfc5b69d693007f7a21e2c3106df30fe-3840x5760.jpg';
+const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/e183ab274f7aeef4756c7a6ef474f0a513da1e8d-3840x5760.jpg';
+const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/2cb936e80b6728cb2ff6a1534e4d6ef8791b60c1-3840x5760.jpg';
+const img12= 'https://cdn.sanity.io/images/cpwmjnrl/production/4ceb4520b41b9b6fa9f1cc10e1d98304a1e7925e-3840x5760.jpg';
+const img13= 'https://cdn.sanity.io/images/cpwmjnrl/production/50a4c7cb37f80cbdd646cb9a3c9f2bee7b92ab23-3840x5760.jpg';
+const img14= 'https://cdn.sanity.io/images/cpwmjnrl/production/94e09f43736e679fc5bc3bfb98f20beefb586a62-3744x5616.jpg';
+const img15= 'https://cdn.sanity.io/images/cpwmjnrl/production/e21432812eeb1d6e48991c2bf06e1402d2261e22-3775x5662.jpg';
+const img16= 'https://cdn.sanity.io/images/cpwmjnrl/production/a1e4355b2c48d14696d5f2103cdef7e9dcee88cd-3683x5524.jpg';
 
-
-const Component7 = () => {
+const Component9 = () => {
 let data = [ {
             id: 1,
             Image: img1,
@@ -77,6 +78,15 @@ let data = [ {
             id: 14,
             Image: img14,
         },
+        {
+            id: 15,
+            Image: img15,
+        },
+        {
+            id: 16,
+            Image: img16,
+        },
+        
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -147,4 +157,4 @@ let data = [ {
     )
 }
 
-export default Component7;
+export default Component9;

@@ -4,23 +4,28 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
-const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/d78a8de439a67c62367480e9e63f5eca692eb38f-1920x2880.jpg';
-const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/31d75efccba9dd1754a94fef2ff7f23d1eb40b71-1648x2473.jpg';
-const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/45f3533749e35a2a46004bb017c3260ffae92f25-1920x2880.jpg';
-const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/70e9a201c13a8f4ce7ec7ee1b0ad3275dd5eb252-3423x5135.jpg';
-const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/222f1ac495521c8aac2dd868010a6f61e54929cd-1920x2880.jpg';
-const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3bc5717e1cf7a1427ac49ba71674c0f549b45b04-1920x2880.jpg';
-const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/54ca7364521a46e9d4baef1b8b991f4626796ca8-3333x4999.jpg';
-const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/53ae4f7685191e7ceeba264ebf7e11d4d2cc3c33-3840x5760.jpg';
-const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/819a0658c2411809aebd008ed2954aa1b315ae11-3840x5760.jpg';
-const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/49f2b0da4504dc946ba8bbd71296abe3a3f5f1f7-3840x5760.jpg';
-const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/601b475f5091b8d6c60f49a3b31db2c27f8ddaf7-3840x5760.jpg';
-const img12= 'https://cdn.sanity.io/images/cpwmjnrl/production/57b997cfc18a4cc8109121f386a01f8675bae048-3840x5760.jpg';
-const img13= 'https://cdn.sanity.io/images/cpwmjnrl/production/a988dcaa47adba048ced5c4002048246744cabc9-3840x5760.jpg';
-const img14= 'https://cdn.sanity.io/images/cpwmjnrl/production/84b3094cb7f0517a803c0bf3a30c0c9d20383382-3439x5158.jpg';
+const img1 = 'https://cdn.sanity.io/images/cpwmjnrl/production/f3d164a464c1e69b70a7368dd43f935001de7d63-2997x4496.jpg';
+const img2 = 'https://cdn.sanity.io/images/cpwmjnrl/production/bec5074dd327b3e5961e14667d913ae5052f1b4a-3288x4932.jpg';
+const img3 = 'https://cdn.sanity.io/images/cpwmjnrl/production/0b1a2f820d226059e90ae5b1e32807bdc9497ef6-3371x5057.jpg';
+const img4 = 'https://cdn.sanity.io/images/cpwmjnrl/production/34fae8c90d3083481bb57863f082f092bde76998-3277x4916.jpg';
+const img5 = 'https://cdn.sanity.io/images/cpwmjnrl/production/91d383d8a7d5c881306db3cb53d273142c5a1986-3278x4917.jpg';
+const img6 = 'https://cdn.sanity.io/images/cpwmjnrl/production/3a6c13022b17c90d28c998bcce758a755167cec3-3840x5760.jpg';
+const img7 = 'https://cdn.sanity.io/images/cpwmjnrl/production/cf7b85315029a1b7c7b680cd80450dd6d719d185-3840x5760.jpg';
+const img8 = 'https://cdn.sanity.io/images/cpwmjnrl/production/35d405eb6daf8edc0d1be41d0bc99222857fcfc7-3599x5398.jpg';
+const img9 = 'https://cdn.sanity.io/images/cpwmjnrl/production/75b8f5a0ee0cf1aae9760642d0d3cea09d52b569-3840x5760.jpg';
+const img10= 'https://cdn.sanity.io/images/cpwmjnrl/production/539fb12f0f5288b470e3092c190942b27d3d397c-3795x5692.jpg';
+const img11= 'https://cdn.sanity.io/images/cpwmjnrl/production/ab840a831250e62af27f61029575f6ca2b6df86f-3398x5097.jpg';
+const img12= 'https://cdn.sanity.io/images/cpwmjnrl/production/98b696a60584e2a1ce5cb6eabb5cee15bd79414d-3643x5464.jpg';
+const img13= 'https://cdn.sanity.io/images/cpwmjnrl/production/0a63da22805def6efb113bb2827491d6343f127b-3149x4724.jpg';
+const img14= 'https://cdn.sanity.io/images/cpwmjnrl/production/d554430e5c3252bc1b6efa76b5e2056d28c360d1-3195x4793.jpg';
+const img15= 'https://cdn.sanity.io/images/cpwmjnrl/production/67344cc56b9460d6e43b8a20a8dd9db30ca91943-3290x4935.jpg';
+const img16= 'https://cdn.sanity.io/images/cpwmjnrl/production/e552fa7f4f854c1c1b1eb26d89486ee8cc6d7b43-3649x5473.jpg';
+const img17= 'https://cdn.sanity.io/images/cpwmjnrl/production/dc7ac728ef2b9d50d67bada287e2f4bb8c919275-3244x4866.jpg';
+const img18= 'https://cdn.sanity.io/images/cpwmjnrl/production/679411a4af852473c6632b8ce120e7bf77541daa-3512x5268.jpg';
+const img19= 'https://cdn.sanity.io/images/cpwmjnrl/production/fcb1349a5b860adf12411b8fed43dcd5afce8f7f-3616x5424.jpg';
+       
 
-
-const Component7 = () => {
+const Component11 = () => {
 let data = [ {
             id: 1,
             Image: img1,
@@ -77,6 +82,27 @@ let data = [ {
             id: 14,
             Image: img14,
         },
+        {
+            id: 15,
+            Image: img15,
+        },
+        {
+            id: 16,
+            Image: img16,
+        },
+        {
+            id: 17,
+            Image: img17,
+        },
+        {
+            id: 18,
+            Image: img18,
+        },
+        {
+            id: 19,
+            Image: img19,
+        },
+      
     ]
     const [model, setModel] = useState(false)
     const [tempimgSrc, setTempImgSrc] = useState('')
@@ -147,4 +173,4 @@ let data = [ {
     )
 }
 
-export default Component7;
+export default Component11;
