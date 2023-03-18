@@ -12,6 +12,9 @@ import Component10 from './Component10';
 import Component11 from './Component11';
 import Component12 from './Component12';
 import Component13 from './Component13';
+import Component14 from './Component14';
+import Component15 from './Component15';
+import Component16 from './Component16';
 
 
 const Gall = () => {
@@ -82,6 +85,15 @@ const Gall = () => {
         case 'option13':
           componentToRender = <Component13 />;
           break;
+        case 'option14':
+          componentToRender = <Component14 />;
+          break;
+        case 'option15':
+          componentToRender = <Component15 />;
+          break;
+        case 'option16':
+          componentToRender = <Component16 />;
+          break;
         default:
           componentToRender = null;
           break;
@@ -110,8 +122,8 @@ const Gall = () => {
                   <option value='option12'>Aisha Shoot</option>
                   <option value='option13'>Maxx Digital Shoot</option>
                   <option value='option14'>Minty Shoot</option>
-                  <option value='option15'>Janaya Beauty Shoot</option>
-                  <option value='option16'>Janaya Shoot</option>
+                  <option value='option15'>Janaya Shoot</option>
+                  <option value='option16'>Janaya Beauty Shoot</option>
                   <option value='option17'>Zenzi Shoot</option>
                   <option value='option18'>Essexx Runaway Shoot</option>
                 </select>
